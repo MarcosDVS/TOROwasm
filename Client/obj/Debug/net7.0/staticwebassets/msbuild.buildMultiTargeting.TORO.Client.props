@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\TORO.Client.props" />
+</Project>

@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TORO.Server", "Server\TORO.Server.csproj", "{07DCBB16-4D4B-4A18-A71D-1FFA13A531E8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TORO.Client", "Client\TORO.Client.csproj", "{A782CC78-2E81-418B-A4AB-D300D0277044}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TORO.Shared", "Shared\TORO.Shared.csproj", "{F2244A97-F5A9-4EED-9255-C779FB4FF9B2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{07DCBB16-4D4B-4A18-A71D-1FFA13A531E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07DCBB16-4D4B-4A18-A71D-1FFA13A531E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07DCBB16-4D4B-4A18-A71D-1FFA13A531E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07DCBB16-4D4B-4A18-A71D-1FFA13A531E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A782CC78-2E81-418B-A4AB-D300D0277044}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A782CC78-2E81-418B-A4AB-D300D0277044}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A782CC78-2E81-418B-A4AB-D300D0277044}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A782CC78-2E81-418B-A4AB-D300D0277044}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2244A97-F5A9-4EED-9255-C779FB4FF9B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2244A97-F5A9-4EED-9255-C779FB4FF9B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2244A97-F5A9-4EED-9255-C779FB4FF9B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2244A97-F5A9-4EED-9255-C779FB4FF9B2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {59764312-5DAF-41F0-A81C-D5659FEA5787}
+	EndGlobalSection
+EndGlobal

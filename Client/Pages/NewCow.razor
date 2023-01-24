@@ -1,0 +1,92 @@
+﻿@page "/new/cow"
+
+<PageTitle>Registrar Bovino</PageTitle>
+<h1>Registrar Bovino</h1>
+<hr />
+
+<div class="button" style="float: right;">
+    <button class="btn btn-secondary" @onclick="back">
+        <span class="oi oi-list-rich"></span> Ver Lista
+    </button>
+</div>
+
+<div class="row">
+    <h3>Bovino</h3>
+    <div class="col">
+        <label for="txtNumeracion">Numeración</label>
+        <input type="number" id="txtNumeracion" class="form-control number" />
+    </div>
+    <div class="col">
+        <label for="txtRaza">Raza</label>
+        <input type="text" id="txtRaza" class="form-control" />
+    </div>
+    <div class="col">
+        <label for="txtColor">Color</label>
+        <input type="text" id="txtColor" class="form-control" />
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <label for="txtSexo">Sexo</label>
+        <select name="" id="txtSexo" class="form-control">
+            <option value="">Macho</option>
+            <option value="">Hembra</option>
+        </select>
+    </div>
+    <div class="col">
+        <label for="txtOrigen">Origen del Ternero</label>
+        <select name="" id="txtOrigen" class="form-control">
+            <option value="" >Nacio en la finca</option>
+            <option value="">Comprado</option>
+        </select>
+    </div>
+    <div class="col">
+        <label for="txtNacimiento" > Fecha de Nacimiento</label>
+        <input type="date" id="txtNacimiento" class="form-control" />
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <label for="txtPeso">Peso/Kilos</label>
+        <input type="number" id="txtPeso" class="form-control" />
+    </div>
+    <div class="col">
+        <label for="txtRegistro">Registro</label>
+        <input type="text" id="txtRegistro" class="form-control" />
+    </div>
+    <div class="col">
+        <label for="txtObservacion">Observación</label>
+        <select name="" id="txtSexo" class="form-control">
+            <option value="">Condiciones optimas</option>
+            <option value="">Delgado</option>
+            <option value="">Enfermo</option>
+            <option value="">Herido</option>
+            <option value="">Cojo</option>
+        </select>
+    </div>
+</div>
+
+<div class="row mt-3">
+    <button class="btn btn-success" @onclick="Registrar">
+        <span class="oi oi-plus"></span> Registrar
+    </button>
+</div>
+
+@code
+{
+    
+    void back()
+    {
+        urlHelper.NavigateTo("/ganado");
+    }
+    void Registrar()
+    {
+        urlHelper.NavigateTo("/father/cow");
+    }
+}
+
+@code {
+
+}

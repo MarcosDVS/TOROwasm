@@ -1,0 +1,68 @@
+@page "/preñes"
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Components.WebAssembly.Authentication
+@using TORO.Shared
+@attribute [Authorize]
+
+<PageTitle>Datos/Preñes</PageTitle>
+<h1>Datos de Preñes</h1>
+
+<div class="row">
+    <div class="col">
+        <input type="search" @bind="Filtro">
+    </div>
+    <div class="col">
+        <button class="btn btn-primary">Buscar</button>
+        <button class="btn btn-warning">
+            <span class="oi oi-pencil"></span>
+        </button>
+        <button class="btn btn-success" @onclick="AgregarVaca">
+            <span class="oi oi-plus"></span> Agregar
+        </button>
+    </div>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID/Vaca</th>
+            <th>Raza</th>
+            <th>ID/Toro</th>
+            <th>Raza</th>
+            <th>Metodo/Preñes</th>
+            <th>Fecha/Preñes</th>
+            <th>PF/Parto</th>
+            <th>FR/Parto</th>
+            <th>Observación</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+            <tr>
+                <td>145 </td>
+                <td>Simbrah </td>
+                <td>230 </td>
+                <td>Brahman </td>
+                <td>Monta directa </td>
+                <td>05-01-2023 </td>
+                <td>05-01-2023 </td>
+                <td>NULL</td>
+                <td>Condiciones optimas</td>
+                <td>
+                    <button class="btn btn-danger"><span class="oi oi-x"></span></button>
+                    <button class="btn btn-success"><span class="oi oi-check"></span></button>
+                </td>
+            </tr>
+        
+    </tbody>
+</table>
+
+@code
+{
+    public string Filtro { get; set; } = "";
+
+    void AgregarVaca()
+    {
+        urlHelper.NavigateTo("/preñes/crear");
+    }
+}
