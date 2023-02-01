@@ -1,5 +1,5 @@
 using System.ComponentModel.DataAnnotations;
-using TEST.Shared.Requests;
+using TORO.Shared.Requests;
 
 namespace TORO.Server.Models;
 

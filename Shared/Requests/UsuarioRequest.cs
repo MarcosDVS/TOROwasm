@@ -1,4 +1,4 @@
-namespace TEST.Shared.Requests;
+namespace TORO.Shared.Requests;
 
 public class UsuarioRequest
 {
