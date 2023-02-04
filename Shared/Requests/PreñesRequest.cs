@@ -1,10 +1,7 @@
-using System.ComponentModel.DataAnnotations;
+namespace TORO.Shared.Models;
 
-namespace TORO.Server.Models;
-
-public class Preñes
+public class PreñesRequest
 {
-    [Key]
     public int ID { get; set; }
     public int IdVaca { get; set; }
     public string RazaVaca { get; set; } = null!;
@@ -14,5 +11,4 @@ public class Preñes
     public DateTime FechaPre { get; set; } = DateTime.Now;
     public DateTime PFP { get; set; }
     public string? Observacion { get; set; }
-    
 }
