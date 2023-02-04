@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using TORO.Shared.Models;
 
 namespace TORO.Server.Models;
 
@@ -16,4 +17,32 @@ public class Bovinos
     public int? Costo { get; set; }
     public string? Observacion { get; set; }
 
+public static Bovinos Crear(BovinosRequest request)
+    {
+        return new Bovinos(){
+            IdBovino = request.IdBovino,
+            Raza = request.Raza,
+            Color = request.Color,
+            Sexo = request.Sexo,
+            IdPadre = request.IdPadre,
+            IdMadre = request.IdMadre,
+            FechaNac = request.FechaNac,
+            PesoNacer = request.PesoNacer,
+            Costo = request.Costo,
+            Observacion = request.Observacion
+        };
+    }
+    public void Editar(BovinosRequest request)
+    {
+        IdBovino = request.IdBovino;
+            Raza = request.Raza;
+            Color = request.Color;
+            Sexo = request.Sexo;
+            IdPadre = request.IdPadre;
+            IdMadre = request.IdMadre;
+            FechaNac = request.FechaNac;
+            PesoNacer = request.PesoNacer;
+            Costo = request.Costo;
+            Observacion = request.Observacion;
+    }
 }

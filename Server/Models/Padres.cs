@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using TORO.Shared.Models;
 
 namespace TORO.Server.Models;
 
@@ -11,4 +12,23 @@ public class Padres
     public string? ColorHijo { get; set; }
     public string SexoHijo { get; set; } = null!;
     public DateTime FechaNac { get; set; } = DateTime.Now;
+
+    public static Padres Crear(PadresRequest request)
+    {
+        return new Padres(){
+            IdPadre = request.IdPadre,
+            IdHijo = request.IdHijo,
+            ColorHijo = request.ColorHijo,
+            SexoHijo = request.SexoHijo,
+            FechaNac = request.FechaNac
+        };
+    }
+    public void Editar(PadresRequest request)
+    {
+        IdPadre = request.IdPadre;
+        IdHijo = request.IdHijo;
+        ColorHijo = request.ColorHijo;
+        SexoHijo = request.SexoHijo;
+        FechaNac = request.FechaNac;
+    }
 }

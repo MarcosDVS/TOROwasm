@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using TORO.Shared.Models;
 
 namespace TORO.Server.Models;
 
@@ -15,4 +16,28 @@ public class Preñes
     public DateTime PFP { get; set; }
     public string? Observacion { get; set; }
     
+    public static Preñes Crear(PreñesRequest request)
+    {
+        return new Preñes(){
+            IdVaca = request.IdVaca,
+            RazaVaca = request.RazaVaca,
+            IdToro = request.IdToro,
+            RazaToro = request.RazaToro,
+            MetodoPreñes = request.MetodoPreñes,
+            FechaPre = request.FechaPre,
+            PFP = request.PFP,
+            Observacion = request.Observacion
+        };
+    }
+    public void Editar(PreñesRequest request)
+    {
+        IdVaca = request.IdVaca;
+        RazaVaca = request.RazaVaca;
+        IdToro = request.IdToro;
+        RazaToro = request.RazaToro;
+        MetodoPreñes = request.MetodoPreñes;
+        FechaPre = request.FechaPre;
+        PFP = request.PFP;
+        Observacion = request.Observacion;
+    }
 }
