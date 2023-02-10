@@ -901,11 +901,11 @@
       "url": "_framework\/TORO.Shared.pdb"
     },
     {
-      "hash": "sha256-M4GnwXNDZXebo1XlLLyAbl3s67t4lN2rzeY6zHPojbE=",
+      "hash": "sha256-eDSGrmcZckh7TAgNd8pfsHiRrNLCJgknYWOu0M5p1iQ=",
       "url": "_framework\/TORO.Client.dll"
     },
     {
-      "hash": "sha256-Dgl2zxqcTHYkJln8tJ1hSHhv3tyKTYQ5McL1p60dnbY=",
+      "hash": "sha256-kpiNQaxeh0qpwo2ZfIt1UAZCAp8JnC+d4FEVe5jeGWU=",
       "url": "_framework\/TORO.Client.pdb"
     },
     {
@@ -913,7 +913,7 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-SbRo2Kr2yu4lpvghc2d8bYE697hCAz6fzjpNnEq9F\/g=",
+      "hash": "sha256-LPMKQ1ZbqnTn++XJVUXQOM6BxToSYBxJjLjgCCwzjx8=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -925,5 +925,5 @@
       "url": "_content\/Microsoft.Authentication.WebAssembly.Msal\/AuthenticationService.js"
     }
   ],
-  "version": "DvQllHRh"
+  "version": "2fGv\/LwW"
 };
