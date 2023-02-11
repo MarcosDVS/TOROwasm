@@ -31,6 +31,7 @@ internal class TORODbContext : DbContext, ITORODbContext
     #region Tablas de la BD.
     public DbSet<Usuario> Usuarios { get; set; } = null!;
     public DbSet<UsuarioRol> UsuariosRoles { get; set; } = null!;
+
     #endregion
     public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
     {

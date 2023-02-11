@@ -3,7 +3,7 @@ using TORO.Shared.Models;
 
 namespace TORO.Server.Models;
 
-public class Padres
+public class Padre
 {
     [Key]
     public int ID { get; set; }
@@ -13,9 +13,9 @@ public class Padres
     public string SexoHijo { get; set; } = null!;
     public DateTime FechaNac { get; set; } = DateTime.Now;
 
-    public static Padres Crear(PadresRequest request)
+    public static Padre Crear(PadresRequest request)
     {
-        return new Padres(){
+        return new Padre(){
             IdPadre = request.IdPadre,
             IdHijo = request.IdHijo,
             ColorHijo = request.ColorHijo,

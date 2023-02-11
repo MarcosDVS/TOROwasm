@@ -3,19 +3,20 @@ using TORO.Shared.Models;
 
 namespace TORO.Server.Models;
 
-public class Madres
+public class Madre
 {
     [Key]
     public int ID { get; set; }
     public int IdMadre { get; set; }
     public int IdHijo { get; set; }
+    public virtual Bovino Bovino { get; set; } = null!;
     public string? ColorHijo { get; set; }
     public string SexoHijo { get; set; } = null!;
     public DateTime FechaNac { get; set; } = DateTime.Now;
 
-    public static Madres Crear(MadresRequest request)
+    public static Madre Crear(MadresRequest request)
     {
-        return new Madres(){
+        return new Madre(){
             IdMadre = request.IdMadre,
             IdHijo = request.IdHijo,
             ColorHijo = request.ColorHijo,

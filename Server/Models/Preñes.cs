@@ -8,8 +8,10 @@ public class Preñes
     [Key]
     public int ID { get; set; }
     public int IdVaca { get; set; }
+    public virtual Bovinos Bovinos { get; set; } = null!;
     public string RazaVaca { get; set; } = null!;
     public int IdToro { get; set; }
+    public virtual Bovinos Bovinos { get; set; } = null!;
     public string RazaToro { get; set; } = null!;
     public string MetodoPreñes { get; set; } = null!;
     public DateTime FechaPre { get; set; } = DateTime.Now;
