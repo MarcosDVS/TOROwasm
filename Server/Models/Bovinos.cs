@@ -21,7 +21,7 @@ public class Bovino
 
 public static Bovino Crear(BovinosRequest request)
     {
-        return new Bovinos(){
+        return new Bovino(){
             IdBovino = request.IdBovino,
             Raza = request.Raza,
             Color = request.Color,

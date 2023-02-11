@@ -205,14 +205,14 @@
       "netstandard.dll": "sha256-p32h5P3QmHJ\/FGoeE6m7f5g\/8ng2PSPGZktHyMadvIs=",
       "System.Private.CoreLib.dll": "sha256-6MwQcyKbqBsoZYOcD9fQJ4iKcn1qMmWRWVEkU2LLCb0=",
       "TORO.Shared.dll": "sha256-vDMma3hKMdCcc0rnxjoQlDIqUZvaYiN3oNZxxtLWYZQ=",
-      "TORO.Client.dll": "sha256-PAstQqbr2LOWHE3LI3PhwaovajO2U7fMk1YcdBRDvZA="
+      "TORO.Client.dll": "sha256-fzr6mRtdfE8GGYHwPp+\/empAQr4T6UjsB5K8o9V0k8k="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
       "TORO.Shared.pdb": "sha256-RRhb\/sVXHb+Te7Eb7X1oW8n2H0NFXYDkRpZgy2clvqo=",
-      "TORO.Client.pdb": "sha256-4kwiILI\/\/+4zugnEXkUo0\/afKbwXJR6\/AmiEtrK1YcM="
+      "TORO.Client.pdb": "sha256-bD3182TIw5NQxhO0UpI\/a9q1ErlcpOM5aDK4FPLMWRE="
     },
     "runtime": {
       "dotnet.7.0.2.rec6pjqj8m.js": "sha256-4mh03qTse0uNR+dQ6ydExm4jJXph0RE8zGNCtF0jiNA=",

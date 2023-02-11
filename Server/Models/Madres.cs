@@ -9,7 +9,6 @@ public class Madre
     public int ID { get; set; }
     public int IdMadre { get; set; }
     public int IdHijo { get; set; }
-    public virtual Bovino Bovino { get; set; } = null!;
     public string? ColorHijo { get; set; }
     public string SexoHijo { get; set; } = null!;
     public DateTime FechaNac { get; set; } = DateTime.Now;
