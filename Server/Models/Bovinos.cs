@@ -14,7 +14,7 @@ public class Bovino
     public virtual Padre Padres { get; set; } = null!;
     public int? IdMadre { get; set; }
     public virtual Madre Madres { get; set; } = null!;
-    public DateTime FechaNac { get; set; }= DateTime.Now;
+    public DateTime FechaNac { get; set; } = DateTime.Now;
     public int? PesoNacer { get; set; } = 25;
     public int? Costo { get; set; }
     public string? Observacion { get; set; }

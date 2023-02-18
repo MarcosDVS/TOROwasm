@@ -28,6 +28,7 @@ internal class TORODbContext : DbContext, ITORODbContext
     {
         _configuration = configuration;
     }
+    
     protected override void OnConfiguring(DbContextOptionsBuilder options)
     {
         options.UseSqlServer(_configuration.GetConnectionString("TORO"));
