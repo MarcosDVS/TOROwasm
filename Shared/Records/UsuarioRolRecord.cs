@@ -3,6 +3,10 @@ namespace TORO.Shared.Records;
 
 public class UsuarioRolRecord
 {
+    public UsuarioRolRecord()
+    {
+        
+    }
     public UsuarioRolRecord(int id, string nombre, bool permisoCrear, bool permisoEditar, bool permisoEliminar)
     {
         Id = id;
