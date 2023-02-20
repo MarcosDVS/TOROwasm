@@ -37,7 +37,7 @@ public class Bovino
     public virtual Padre Padres { get; set; } = null!;
     public virtual Madre Madres { get; set; } = null!;
 
-       public static Bovino Crear(BovinoCreateRequest request)
+    public static Bovino Crear(BovinoCreateRequest request)
     {
         return new Bovino(request.Raza, request.Color, request.Sexo, request.IdPadre, request.IdMadre,
         request.FechaNac, request.PesoNacer, request.Costo, request.Observacion);
@@ -45,7 +45,8 @@ public class Bovino
 
     public void Modificar(BovinoUpdateRequest request)
     {
-        if(Raza != request.Raza) Color = request.Color;
+        if(Raza != request.Raza) Raza = request.Raza;
+        if(Color != request.Color) Color = request.Color;
         if(Sexo != request.Sexo) Sexo = request.Sexo;
         if(IdPadre != request.IdPadre) IdPadre = request.IdPadre;
         if(IdMadre != request.IdMadre) IdMadre = request.IdMadre;

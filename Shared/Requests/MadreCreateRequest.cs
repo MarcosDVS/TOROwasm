@@ -13,6 +13,6 @@ public class MadreCreateRequest
 
 public class MadreUpdateRequest:MadreCreateRequest
 {
-    [Required(ErrorMessage ="Se debe proporcionar el Id del Bovino a modificar.")]
+    [Required(ErrorMessage ="Se debe proporcionar el Id de la madre a modificar.")]
     public int ID { get; set; }
 }

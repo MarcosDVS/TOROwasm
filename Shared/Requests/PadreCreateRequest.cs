@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace TORO.Shared.Models;
 
 public class PadreCreateRequest
@@ -11,5 +13,6 @@ public class PadreCreateRequest
 
 public class PadreUpdateRequest: PadreCreateRequest
 {
+    [Required(ErrorMessage ="Se debe proporcionar el Id del padre a modificar.")]
     public int ID { get; set; }
 }
