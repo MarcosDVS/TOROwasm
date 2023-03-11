@@ -25,7 +25,7 @@ public class UsuarioRolManager : IUsuarioRolManager
         {
             var response = await httpClient.GetAsync(UsuarioRolRouteManager.BASE);
             var resultado = await response.ToResultList<UsuarioRolRecord>();
-            return resultado;
+            return resultado;;
         }
         catch (Exception e)
         {
