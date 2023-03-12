@@ -3,7 +3,7 @@ using TORO.Shared.Records;
 using TORO.Shared.Routes;
 using TORO.Client.Extensions;
 
-namespace TORO.Client.Managers.Client;
+namespace TORO.Client.Managers;
 
 public interface IUsuarioRolManager
 {
@@ -25,7 +25,8 @@ public class UsuarioRolManager : IUsuarioRolManager
         {
             var response = await httpClient.GetAsync(UsuarioRolRouteManager.BASE);
             var resultado = await response.ToResultList<UsuarioRolRecord>();
-            return resultado;;
+
+            return resultado;
         }
         catch (Exception e)
         {
