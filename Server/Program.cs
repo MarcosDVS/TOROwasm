@@ -11,6 +11,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 builder.Services.AddDbContext<TORODbContext>();
+builder.Services.AddScoped<ITORODbContext,TORODbContext>();
 
 var app = builder.Build();
 

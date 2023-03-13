@@ -854,3 +854,7 @@ C:\Users\Usuario\Desktop\Marcos\Lab De Programacion IV\TORO\Client\obj\Debug\net
 C:\Users\Usuario\Desktop\Marcos\Lab De Programacion IV\TORO\Client\obj\Debug\net7.0\build-gz\uyTfQnbN.gz
 C:\Users\Usuario\Desktop\Marcos\Lab De Programacion IV\TORO\Client\obj\Debug\net7.0\build-gz\qBVyMDRY.gz
 C:\Users\Usuario\Desktop\Marcos\Lab De Programacion IV\TORO\Client\obj\Debug\net7.0\build-gz\agbu6sMy.gz
+C:\Users\Usuario\Desktop\Marcos\Lab De Programacion IV\TORO\Client\bin\Debug\net7.0\wwwroot\_framework\Newtonsoft.Json.dll
+C:\Users\Usuario\Desktop\Marcos\Lab De Programacion IV\TORO\Client\bin\Debug\net7.0\wwwroot\_framework\Newtonsoft.Json.dll.gz
+C:\Users\Usuario\Desktop\Marcos\Lab De Programacion IV\TORO\Client\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\Usuario\Desktop\Marcos\Lab De Programacion IV\TORO\Client\obj\Debug\net7.0\build-gz\+7trt7yr.gz

@@ -56,6 +56,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjY2lvbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[c:/Users/Usuario/Desktop/Marcos/Lab De Programacion IV/TORO/Client/Pages/UsuariosRoles/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXN1YXJpb3NSb2xlc1xJbmRleC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Usuario/Desktop/Marcos/Lab De Programacion IV/TORO/Client/Pages/UsuariosRoles/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXN1YXJpb3NSb2xlc1xfSW1wb3J0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [c:/Users/Usuario/Desktop/Marcos/Lab De Programacion IV/TORO/Client/Shared/LoginDisplay.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExvZ2luRGlzcGxheS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 

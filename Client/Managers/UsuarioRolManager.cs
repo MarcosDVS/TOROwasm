@@ -3,7 +3,7 @@ using TORO.Shared.Records;
 using TORO.Shared.Routes;
 using TORO.Client.Extensions;
 
-namespace TORO.Client.Managers.Client;
+namespace TORO.Client.Managers;
 
 public interface IUsuarioRolManager
 {
