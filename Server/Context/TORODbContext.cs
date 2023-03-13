@@ -7,7 +7,7 @@ using TORO.Server.Models;
 
 namespace TORO.Server.Context;
 
-internal interface ITORODbContext
+public interface ITORODbContext
 {
     DbSet<Usuario> Usuarios { get; set; }
     DbSet<UsuarioRol> UsuariosRoles { get; set; }
