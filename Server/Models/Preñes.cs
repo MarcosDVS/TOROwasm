@@ -1,5 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using TORO.Shared.Models;
+using TORO.Shared.Records;
 
 namespace TORO.Server.Models;
 
@@ -43,18 +44,18 @@ public class Preñes
     public void Modificar(PreñesUpdateRequest request)
     {
         if(IdVaca != request.IdVaca) IdVaca = request.IdVaca;
-        if(IdRazaVaca != request.IdRazaVaca) IdRazaVaca = request.IdRazaVaca;
+        if(RazaVaca != request.RazaVaca) RazaVaca = request.RazaVaca;
         if(IdToro != request.IdToro) IdToro = request.IdToro;
         if(RazaToro != request.RazaToro) RazaToro = request.RazaToro;
-        if(MetodoPreñes != request.FechaNac) MetodoPreñes= request.MetodoPreñes;
-        if(FechaPre != request.FechaPre) IdToro = request.FechaPre;
+        if(MetodoPreñes != request.MetodoPreñes) MetodoPreñes= request.MetodoPreñes;
+        if(FechaPre != request.FechaPre) FechaPre = request.FechaPre;
         if(PFP != request.PFP) PFP = request.PFP;
         if(Observacion != request.Observacion) Observacion= request.Observacion;
         
     }
-    public PreñesRecord ToRecord()
+    public preñesRecord ToRecord()
     {
-        return new PreñesRecord(ID,IdVaca,IdRazaVaca,IdToro,RazaToro,MetodoPreñes,FechaPre,PFP,Observacion);
+        return new preñesRecord(ID,IdVaca,RazaVaca,IdToro,RazaToro,MetodoPreñes,FechaPre,PFP,Observacion);
     }
     
 }

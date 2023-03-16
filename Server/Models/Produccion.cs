@@ -1,6 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 using TORO.Shared.Models;
+using TORO.Shared.Records;
 
 namespace TORO.Server.Models;
 
@@ -13,7 +14,7 @@ public class Produccion
     
     }
 
-    public Produccion(int iD, DateTime fechaProd, int vacasProd, int litrosLeche)
+    public Produccion(DateTime fechaProd, int vacasProd, int litrosLeche)
     {
         FechaProd = fechaProd;
         VacasProd = vacasProd;
@@ -28,10 +29,10 @@ public class Produccion
 
     public static Produccion Crear(ProduccionCreateRequest request)
     {
-        return new Produccion (request.IdVaca);
+        return new Produccion (request.FechaProd, request.VacasProd, request.LitrosLeche);
     }
 
-    public void Modificar(PreñesUpdateRequest request)
+    public void Modificar(ProduccionUpdateRequest request)
     {
         if(FechaProd != request.FechaProd) FechaProd = request.FechaProd;
         if(VacasProd != request.VacasProd) VacasProd = request.VacasProd;
@@ -39,9 +40,9 @@ public class Produccion
        
         
     }
-    public PadreRecord ToRecord()
+    public ProduccionRecord ToRecord()
     {
-        return new PadreRecord(ID,FechaProd,VacasProd,LitrosLeche);
+        return new ProduccionRecord(ID,FechaProd,VacasProd,LitrosLeche);
     }
     
 }
