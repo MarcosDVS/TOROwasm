@@ -1,15 +1,11 @@
-using System.Threading;
-using System.Reflection.Metadata;
-using System;
-using System.Threading.Tasks;
 using Ardalis.ApiEndpoints;
-using TORO.Shared.Records;
 using TORO.Shared.Requests;
-using TORO.shared.Wrapper;
+using TORO.Shared.Wrapper;
 using Microsoft.AspNetCore.Mvc;
 using TORO.Server.Models;
 using Microsoft.EntityFrameworkCore;
-
+using TORO.Server.Context;
+using TORO.Shared.Routes;
 
 namespace TORO.Server.Endpoints.UsuarioRoles;
 
@@ -17,16 +13,16 @@ namespace TORO.Server.Endpoints.UsuarioRoles;
 using Request = UsuarioRolCreateRequest;
 using Respuesta = Result<int>;
 
-public class Create :EndpointsBaseAsync.WithoutRequest<Request>.WithActionResult<Respuesta>
+public class Create : EndpointBaseAsync.WithoutRequest<Request>.WithActionResult<Respuesta>
 {
-    private readonly IMyDbContext dbContext;
-    public Create(IMyDbContext dbContext)
+    private readonly ITORODbContext dbContext;
+    public Create(ITORODbContext dbContext)
     {
         this.dbContext = dbContext;
     }
 
-    [HttpPost(UsuarioRouteManager.BASE)]
-public override  async Task<ActionResult<Respuesta>> HandleAsync (Request request, CancellationToken cancellationToken = default)
+    [HttpPost(UsuarioRolRouteManager.BASE)]
+public override async Task<ActionResult<Respuesta>> HandleAsync (Request request, CancellationToken cancellationToken = default)
 {
     try{
         #region  Validaciones
@@ -35,7 +31,7 @@ public override  async Task<ActionResult<Respuesta>> HandleAsync (Request reques
             return Respuesta.Fail($"Ya existe un rol con el nombre'({request.Nombre})'.");
         #endregion
         rol = UsuarioRol.Crear(request);
-        dbContext.UsuarioRoles.Add(rol);
+        dbContext.UsuariosRoles.Add(rol);
         await dbContext.SaveChangesAsync(cancellationToken);
         return Respuesta.Success(rol.Id);
     }

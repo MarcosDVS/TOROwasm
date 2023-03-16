@@ -1,7 +1,6 @@
 using Ardalis.ApiEndpoints;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using TORO.Server.Models;
 using TORO.Server.Context;
 using TORO.Shared.Records;
 using TORO.Shared.Routes;
@@ -23,16 +22,17 @@ public class GetById : EndpointBaseAsync.WithRequest<Request>.WithActionResult<R
     [HttpGet(UsuarioRolRouteManager.GetById)]
     public override async Task<ActionResult<Respuesta>> HandleAsync([FromRoute] Request request,CancellationToken cancellationToken = default)
     {
-        try{
+        try
+        {
             var rol = await dbContext.UsuariosRoles
             .where(r=>r.Id == request.Id)
-        .Select(rol=>rol.ToRecord())
-        .FirstOrDefaultAsync(cancellationToken);
-        
-        if(rol==null)
-        return Respuesta.Fail($"No fue posible encontrar el rol '{request.Id}'");
-        
-        return Respuesta.Success(rol);
+            .Select(rol=>rol.ToRecord())
+            .FirstOrDefaultAsync(cancellationToken);
+            
+            if(rol==null)
+            return Respuesta.Fail($"No fue posible encontrar el rol '{request.Id}'");
+            
+            return Respuesta.Success(rol);
         }
         catch(Exception ex)
         {
