@@ -1,9 +1,9 @@
 using TORO.Shared.Wrapper;
 using TORO.Shared.Records;
-using TORO.Shared.Request;
 using TORO.Shared.Routes;
 using TORO.Client.Extensions;
 using System.Net.Http.Json;
+using TORO.Shared.Requests;
 
 namespace TORO.Client.Managers;
 
