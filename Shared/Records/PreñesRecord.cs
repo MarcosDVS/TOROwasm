@@ -1,7 +1,5 @@
 namespace TORO.Shared.Records;
 
-
-
 public class preñesRecord
 {
  public preñesRecord()
