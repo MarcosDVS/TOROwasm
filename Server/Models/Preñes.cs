@@ -4,13 +4,13 @@ using TORO.Shared.Records;
 
 namespace TORO.Server.Models;
 
-public class Preñes
+public class EmbVaca
 {
-    public Preñes()
+    public EmbVaca()
     {
         
     }
-    public Preñes(int idVaca, string razaVaca, int idToro, string razaToro, string metodoPreñes, DateTime fechaPre, DateTime pFP, string observacion)
+    public EmbVaca(int idVaca, string razaVaca, int idToro, string razaToro, string metodoPreñes, DateTime fechaPre, DateTime pFP, string observacion)
     {
         
         IdVaca = idVaca;
@@ -34,9 +34,9 @@ public class Preñes
     public DateTime PFP { get; set; }
     public string? Observacion { get; set; }
    
-    public static Preñes Crear(PreñesCreateRequest request)
+    public static EmbVaca Crear(PreñesCreateRequest request)
     {
-        return new Preñes (request.IdVaca,request.RazaVaca,request.IdToro,
+        return new EmbVaca (request.IdVaca,request.RazaVaca,request.IdToro,
         request.RazaToro,request.MetodoPreñes,request.FechaPre,request.PFP,
         request.Observacion);
     }
