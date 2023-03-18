@@ -13,26 +13,28 @@ namespace TORO.Server.Endpoints.UsuarioRoles;
 using Request = UsuarioRolCreateRequest;
 using Respuesta = Result<int>;
 
-public class Create : EndpointBaseAsync.WithoutRequest<Request>.WithActionResult<Respuesta>
-{
+public class Create : EndpointBaseAsync.WithRequest<Request>.WithActionResult<Respuesta>
+{ 
     private readonly ITORODbContext dbContext;
     public Create(ITORODbContext dbContext)
     {
         this.dbContext = dbContext;
     }
 
+    public ITORODbContext DbContext => dbContext;
+
     [HttpPost(UsuarioRolRouteManager.BASE)]
 public override async Task<ActionResult<Respuesta>> HandleAsync (Request request, CancellationToken cancellationToken = default)
 {
     try{
         #region  Validaciones
-        var rol = await dbContext.UsuariosRoles.FirstOrDefaultAsync(r => r.Nombre.ToLower() == request.Nombre.ToLower(),cancellationToken);
+        var rol = await DbContext.UsuariosRoles.FirstOrDefaultAsync(r => r.Nombre.ToLower() == request.Nombre.ToLower(),cancellationToken);
         if(rol != null)
             return Respuesta.Fail($"Ya existe un rol con el nombre'({request.Nombre})'.");
         #endregion
         rol = UsuarioRol.Crear(request);
-        dbContext.UsuariosRoles.Add(rol);
-        await dbContext.SaveChangesAsync(cancellationToken);
+        DbContext.UsuariosRoles.Add(rol);
+        await DbContext.SaveChangesAsync(cancellationToken);
         return Respuesta.Success(rol.Id);
     }
     catch( Exception e){

@@ -5,6 +5,7 @@ public class RouteApiBase
 {
     public const string API = "/api";
     public const string IdParameter = "{Id:int}";
+    public int Id { get; set; }
 }
 
 public class UsuarioRolRouteManager:RouteApiBase

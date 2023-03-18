@@ -5,7 +5,7 @@
       "url": "css\/app.css"
     },
     {
-      "hash": "sha256-z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=",
+      "hash": "sha256-SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7\/p4nS6D\/0=",
       "url": "css\/bootstrap\/bootstrap.min.css"
     },
     {
@@ -869,8 +869,8 @@
       "url": "_framework\/System.Private.CoreLib.dll"
     },
     {
-      "hash": "sha256-DxGvmbtUa6hGJpk3VyMEbkPZ653qWbQkh8X4ZVM9TWM=",
-      "url": "_framework\/dotnet.7.0.3.j8ncj3rk5e.js"
+      "hash": "sha256-3l+4ZYRWpGMbBjNqeIqO9T\/65euaOzIvRlVX2SySvFQ=",
+      "url": "_framework\/dotnet.7.0.4.a2qkbpsj7l.js"
     },
     {
       "hash": "sha256-jgK4sHqNVMYvwtJ9cbh\/rz\/+ZekC9qEBgHdG\/NsjYhw=",
@@ -897,19 +897,19 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-zrTIWvNK9n+iu\/YDE0aFQ8v3ppX26\/4gN3LL1xcpcBw=",
+      "hash": "sha256-6FTxjXtk68sm3QgyXEeqqRm2V59ys88TseHFyNDJNwM=",
       "url": "_framework\/TORO.Shared.dll"
     },
     {
-      "hash": "sha256-GENVxaGA4CphdhnRH6DDojWMT2HEf+inRrfRSQHwniY=",
+      "hash": "sha256-GK7OVTYxlUwMpoc5TdCbAOjjENlXNxSlh7FH4zPGUl8=",
       "url": "_framework\/TORO.Shared.pdb"
     },
     {
-      "hash": "sha256-LDG0YPGXkhBuD\/GjEEXoeeY9REQi2Fxq\/il68oqvW\/Q=",
+      "hash": "sha256-YXRRIxKPx3Ok\/513LwVFgJH4ecXq7CiM+nVL\/VqCH3M=",
       "url": "_framework\/TORO.Client.dll"
     },
     {
-      "hash": "sha256-uVjTAI\/qSIuPjiqqsHsI1uO9REBUIB9809p2v7SZSEQ=",
+      "hash": "sha256-X1IU8v1vMwZnAAfr5\/wrV2AxPdMpKPBs52s9oZ0BI1U=",
       "url": "_framework\/TORO.Client.pdb"
     },
     {
@@ -917,7 +917,7 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-AiZcvUQXVZ90pehSz2b2\/aQjz5STq68pINsE2qoD04g=",
+      "hash": "sha256-7W0ZDH9J7fdTGCkRzjSifGmilGaVuXEzsyzozMjyCrE=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -929,5 +929,5 @@
       "url": "_content\/Microsoft.Authentication.WebAssembly.Msal\/AuthenticationService.js"
     }
   ],
-  "version": "TyfkJdMv"
+  "version": "vyth3o0T"
 };

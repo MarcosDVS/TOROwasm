@@ -10,8 +10,6 @@ namespace TORO.Client.Managers;
 public interface IUsuarioRolManager
 {
     Task<ResultList<UsuarioRolRecord>> GetAsync();
-    public async Task<Result<int>> CreateAsync( UsuarioRolCreateRequest request);
-
     Task<Result<UsuarioRolRecord>> GetByIdAsync(int id);
     Task<Result<int>> CreateAsync(UsuarioRolCreateRequest request);
     
