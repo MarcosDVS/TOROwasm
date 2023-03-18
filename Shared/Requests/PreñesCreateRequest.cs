@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace TORO.Shared.Models;
+namespace TORO.Shared.Requests;
 
 public class PreñesCreateRequest
 {
