@@ -7,8 +7,8 @@ using TORO.Shared.Records;
 using TORO.Shared.Routes;
 using TORO.Shared.Wrapper;
 
-namespace TORO.Server.Endpoints.Madre;
-using Respuesta = ResultList<MadreRecord>;
+namespace TORO.Server.Endpoints.Produccion;
+using Respuesta = ResultList<ProduccionRecord>;
 
 public class Get : EndpointBaseAsync.WithoutRequest.WithActionResult<Respuesta>
 {
@@ -19,19 +19,17 @@ public class Get : EndpointBaseAsync.WithoutRequest.WithActionResult<Respuesta>
         this.dbContext = dbContext;
     }
 
-    [HttpGet(MadreRouteManager.BASE)]
+    [HttpGet(ProduccionRouteManager.BASE)]
     public override async Task<ActionResult<Respuesta>> HandleAsync(CancellationToken cancellationToken = default)
     {
-        try
-        {
-            var roles = await dbContext.Mother
-            .Select(rol=>rol.ToRecord())
-            .ToListAsync(cancellationToken);
+        try{
+            var roles = await dbContext.Producciones
+        .Select(rol=>rol.ToRecord())
+        .ToListAsync(cancellationToken);
         
-            return Respuesta.Success(roles);
+        return Respuesta.Success(roles);
         }
-        catch(Exception ex)
-        {
+        catch(Exception ex){
             return Respuesta.Fail(ex.Message);
         }
     }

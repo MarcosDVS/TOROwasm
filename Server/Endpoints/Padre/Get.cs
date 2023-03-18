@@ -23,7 +23,7 @@ public class Get : EndpointBaseAsync.WithoutRequest.WithActionResult<Respuesta>
     public override async Task<ActionResult<Respuesta>> HandleAsync(CancellationToken cancellationToken = default)
     {
         try{
-            var roles = await dbContext.Padres
+            var roles = await dbContext.Father
         .Select(rol=>rol.ToRecord())
         .ToListAsync(cancellationToken);
         
