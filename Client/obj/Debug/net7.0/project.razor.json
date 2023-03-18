@@ -105,120 +105,9 @@
         }
       },
       {
-        "HashCode": -256408310,
+        "HashCode": -1747801050,
         "Kind": "Components.Component",
-        "Name": "TORO.Client.Pages.FatherCow",
-        "AssemblyName": "TORO.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "FatherCow"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TORO.Client.Pages.FatherCow",
-          "Common.TypeNamespace": "TORO.Client.Pages",
-          "Common.TypeNameIdentifier": "FatherCow"
-        }
-      },
-      {
-        "HashCode": 995369214,
-        "Kind": "Components.Component",
-        "Name": "TORO.Client.Pages.FatherCow",
-        "AssemblyName": "TORO.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "TORO.Client.Pages.FatherCow"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TORO.Client.Pages.FatherCow",
-          "Common.TypeNamespace": "TORO.Client.Pages",
-          "Common.TypeNameIdentifier": "FatherCow",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1102601268,
-        "Kind": "Components.Component",
-        "Name": "TORO.Client.Pages.GanadoView",
-        "AssemblyName": "TORO.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "GanadoView"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TORO.Client.Pages.GanadoView",
-          "Common.TypeNamespace": "TORO.Client.Pages",
-          "Common.TypeNameIdentifier": "GanadoView"
-        }
-      },
-      {
-        "HashCode": -293505950,
-        "Kind": "Components.Component",
-        "Name": "TORO.Client.Pages.GanadoView",
-        "AssemblyName": "TORO.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "TORO.Client.Pages.GanadoView"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TORO.Client.Pages.GanadoView",
-          "Common.TypeNamespace": "TORO.Client.Pages",
-          "Common.TypeNameIdentifier": "GanadoView",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -973474299,
-        "Kind": "Components.Component",
-        "Name": "TORO.Client.Pages.Index",
-        "AssemblyName": "TORO.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TORO.Client.Pages.Index",
-          "Common.TypeNamespace": "TORO.Client.Pages",
-          "Common.TypeNameIdentifier": "Index"
-        }
-      },
-      {
-        "HashCode": 782758251,
-        "Kind": "Components.Component",
-        "Name": "TORO.Client.Pages.Index",
-        "AssemblyName": "TORO.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "TORO.Client.Pages.Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TORO.Client.Pages.Index",
-          "Common.TypeNamespace": "TORO.Client.Pages",
-          "Common.TypeNameIdentifier": "Index",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1004125612,
-        "Kind": "Components.Component",
-        "Name": "TORO.Client.Pages.MotherCow",
+        "Name": "TORO.Client.Pages.MotherCow.MotherCow",
         "AssemblyName": "TORO.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
@@ -228,175 +117,27 @@
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TORO.Client.Pages.MotherCow",
-          "Common.TypeNamespace": "TORO.Client.Pages",
+          "Common.TypeName": "TORO.Client.Pages.MotherCow.MotherCow",
+          "Common.TypeNamespace": "TORO.Client.Pages.MotherCow",
           "Common.TypeNameIdentifier": "MotherCow"
         }
       },
       {
-        "HashCode": -1797450238,
+        "HashCode": 831609852,
         "Kind": "Components.Component",
-        "Name": "TORO.Client.Pages.MotherCow",
+        "Name": "TORO.Client.Pages.MotherCow.MotherCow",
         "AssemblyName": "TORO.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "TORO.Client.Pages.MotherCow"
+            "TagName": "TORO.Client.Pages.MotherCow.MotherCow"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TORO.Client.Pages.MotherCow",
-          "Common.TypeNamespace": "TORO.Client.Pages",
+          "Common.TypeName": "TORO.Client.Pages.MotherCow.MotherCow",
+          "Common.TypeNamespace": "TORO.Client.Pages.MotherCow",
           "Common.TypeNameIdentifier": "MotherCow",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 675312907,
-        "Kind": "Components.Component",
-        "Name": "TORO.Client.Pages.NewCow",
-        "AssemblyName": "TORO.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "NewCow"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TORO.Client.Pages.NewCow",
-          "Common.TypeNamespace": "TORO.Client.Pages",
-          "Common.TypeNameIdentifier": "NewCow"
-        }
-      },
-      {
-        "HashCode": -1742204050,
-        "Kind": "Components.Component",
-        "Name": "TORO.Client.Pages.NewCow",
-        "AssemblyName": "TORO.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "TORO.Client.Pages.NewCow"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TORO.Client.Pages.NewCow",
-          "Common.TypeNamespace": "TORO.Client.Pages",
-          "Common.TypeNameIdentifier": "NewCow",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1607249823,
-        "Kind": "Components.Component",
-        "Name": "TORO.Client.Pages.PreñesCrear",
-        "AssemblyName": "TORO.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "PreñesCrear"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TORO.Client.Pages.PreñesCrear",
-          "Common.TypeNamespace": "TORO.Client.Pages",
-          "Common.TypeNameIdentifier": "PreñesCrear"
-        }
-      },
-      {
-        "HashCode": -1649129248,
-        "Kind": "Components.Component",
-        "Name": "TORO.Client.Pages.PreñesCrear",
-        "AssemblyName": "TORO.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "TORO.Client.Pages.PreñesCrear"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TORO.Client.Pages.PreñesCrear",
-          "Common.TypeNamespace": "TORO.Client.Pages",
-          "Common.TypeNameIdentifier": "PreñesCrear",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 208483225,
-        "Kind": "Components.Component",
-        "Name": "TORO.Client.Pages.PreñesView",
-        "AssemblyName": "TORO.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "PreñesView"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TORO.Client.Pages.PreñesView",
-          "Common.TypeNamespace": "TORO.Client.Pages",
-          "Common.TypeNameIdentifier": "PreñesView"
-        }
-      },
-      {
-        "HashCode": 1474870714,
-        "Kind": "Components.Component",
-        "Name": "TORO.Client.Pages.PreñesView",
-        "AssemblyName": "TORO.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "TORO.Client.Pages.PreñesView"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TORO.Client.Pages.PreñesView",
-          "Common.TypeNamespace": "TORO.Client.Pages",
-          "Common.TypeNameIdentifier": "PreñesView",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1482622725,
-        "Kind": "Components.Component",
-        "Name": "TORO.Client.Pages.Produccion",
-        "AssemblyName": "TORO.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Produccion"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TORO.Client.Pages.Produccion",
-          "Common.TypeNamespace": "TORO.Client.Pages",
-          "Common.TypeNameIdentifier": "Produccion"
-        }
-      },
-      {
-        "HashCode": 574866497,
-        "Kind": "Components.Component",
-        "Name": "TORO.Client.Pages.Produccion",
-        "AssemblyName": "TORO.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "TORO.Client.Pages.Produccion"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TORO.Client.Pages.Produccion",
-          "Common.TypeNamespace": "TORO.Client.Pages",
-          "Common.TypeNameIdentifier": "Produccion",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -433,6 +174,265 @@
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "TORO.Client.Pages.UsuariosRoles.Index",
           "Common.TypeNamespace": "TORO.Client.Pages.UsuariosRoles",
+          "Common.TypeNameIdentifier": "Index",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1945005309,
+        "Kind": "Components.Component",
+        "Name": "TORO.Client.Pages.FatherCow.FatherCow",
+        "AssemblyName": "TORO.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "FatherCow"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "TORO.Client.Pages.FatherCow.FatherCow",
+          "Common.TypeNamespace": "TORO.Client.Pages.FatherCow",
+          "Common.TypeNameIdentifier": "FatherCow"
+        }
+      },
+      {
+        "HashCode": -270394618,
+        "Kind": "Components.Component",
+        "Name": "TORO.Client.Pages.FatherCow.FatherCow",
+        "AssemblyName": "TORO.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "TORO.Client.Pages.FatherCow.FatherCow"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "TORO.Client.Pages.FatherCow.FatherCow",
+          "Common.TypeNamespace": "TORO.Client.Pages.FatherCow",
+          "Common.TypeNameIdentifier": "FatherCow",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -12202449,
+        "Kind": "Components.Component",
+        "Name": "TORO.Client.Pages.Preñes.PreñesCrear",
+        "AssemblyName": "TORO.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "PreñesCrear"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "TORO.Client.Pages.Preñes.PreñesCrear",
+          "Common.TypeNamespace": "TORO.Client.Pages.Preñes",
+          "Common.TypeNameIdentifier": "PreñesCrear"
+        }
+      },
+      {
+        "HashCode": -135764446,
+        "Kind": "Components.Component",
+        "Name": "TORO.Client.Pages.Preñes.PreñesCrear",
+        "AssemblyName": "TORO.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "TORO.Client.Pages.Preñes.PreñesCrear"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "TORO.Client.Pages.Preñes.PreñesCrear",
+          "Common.TypeNamespace": "TORO.Client.Pages.Preñes",
+          "Common.TypeNameIdentifier": "PreñesCrear",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -752116952,
+        "Kind": "Components.Component",
+        "Name": "TORO.Client.Pages.Preñes.PreñesView",
+        "AssemblyName": "TORO.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "PreñesView"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "TORO.Client.Pages.Preñes.PreñesView",
+          "Common.TypeNamespace": "TORO.Client.Pages.Preñes",
+          "Common.TypeNameIdentifier": "PreñesView"
+        }
+      },
+      {
+        "HashCode": 584329149,
+        "Kind": "Components.Component",
+        "Name": "TORO.Client.Pages.Preñes.PreñesView",
+        "AssemblyName": "TORO.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "TORO.Client.Pages.Preñes.PreñesView"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "TORO.Client.Pages.Preñes.PreñesView",
+          "Common.TypeNamespace": "TORO.Client.Pages.Preñes",
+          "Common.TypeNameIdentifier": "PreñesView",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -496161074,
+        "Kind": "Components.Component",
+        "Name": "TORO.Client.Pages.Ganado.NewCow",
+        "AssemblyName": "TORO.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "NewCow"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "TORO.Client.Pages.Ganado.NewCow",
+          "Common.TypeNamespace": "TORO.Client.Pages.Ganado",
+          "Common.TypeNameIdentifier": "NewCow"
+        }
+      },
+      {
+        "HashCode": -1938205328,
+        "Kind": "Components.Component",
+        "Name": "TORO.Client.Pages.Ganado.NewCow",
+        "AssemblyName": "TORO.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "TORO.Client.Pages.Ganado.NewCow"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "TORO.Client.Pages.Ganado.NewCow",
+          "Common.TypeNamespace": "TORO.Client.Pages.Ganado",
+          "Common.TypeNameIdentifier": "NewCow",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 442760428,
+        "Kind": "Components.Component",
+        "Name": "TORO.Client.Pages.Ganado.GanadoView",
+        "AssemblyName": "TORO.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "GanadoView"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "TORO.Client.Pages.Ganado.GanadoView",
+          "Common.TypeNamespace": "TORO.Client.Pages.Ganado",
+          "Common.TypeNameIdentifier": "GanadoView"
+        }
+      },
+      {
+        "HashCode": -2022149578,
+        "Kind": "Components.Component",
+        "Name": "TORO.Client.Pages.Ganado.GanadoView",
+        "AssemblyName": "TORO.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "TORO.Client.Pages.Ganado.GanadoView"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "TORO.Client.Pages.Ganado.GanadoView",
+          "Common.TypeNamespace": "TORO.Client.Pages.Ganado",
+          "Common.TypeNameIdentifier": "GanadoView",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1398136931,
+        "Kind": "Components.Component",
+        "Name": "TORO.Client.Pages.Produccion.Produccion",
+        "AssemblyName": "TORO.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Produccion"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "TORO.Client.Pages.Produccion.Produccion",
+          "Common.TypeNamespace": "TORO.Client.Pages.Produccion",
+          "Common.TypeNameIdentifier": "Produccion"
+        }
+      },
+      {
+        "HashCode": -1235256480,
+        "Kind": "Components.Component",
+        "Name": "TORO.Client.Pages.Produccion.Produccion",
+        "AssemblyName": "TORO.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "TORO.Client.Pages.Produccion.Produccion"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "TORO.Client.Pages.Produccion.Produccion",
+          "Common.TypeNamespace": "TORO.Client.Pages.Produccion",
+          "Common.TypeNameIdentifier": "Produccion",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -973474299,
+        "Kind": "Components.Component",
+        "Name": "TORO.Client.Pages.Index",
+        "AssemblyName": "TORO.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "TORO.Client.Pages.Index",
+          "Common.TypeNamespace": "TORO.Client.Pages",
+          "Common.TypeNameIdentifier": "Index"
+        }
+      },
+      {
+        "HashCode": 782758251,
+        "Kind": "Components.Component",
+        "Name": "TORO.Client.Pages.Index",
+        "AssemblyName": "TORO.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "TORO.Client.Pages.Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "TORO.Client.Pages.Index",
+          "Common.TypeNamespace": "TORO.Client.Pages",
           "Common.TypeNameIdentifier": "Index",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
@@ -18743,19 +18743,24 @@
   "RootNamespace": "TORO.Client",
   "Documents": [
     {
+      "FilePath": "c:\\2020-0288\\TORO\\Client\\Pages\\Produccion\\_Imports.razor",
+      "TargetPath": "Pages\\Produccion\\_Imports.razor",
+      "FileKind": "componentImport"
+    },
+    {
+      "FilePath": "c:\\2020-0288\\TORO\\Client\\Pages\\Ganado\\_Imports.razor",
+      "TargetPath": "Pages\\Ganado\\_Imports.razor",
+      "FileKind": "componentImport"
+    },
+    {
       "FilePath": "c:\\2020-0288\\TORO\\Client\\Pages\\UsuariosRoles\\_Imports.razor",
       "TargetPath": "Pages\\UsuariosRoles\\_Imports.razor",
       "FileKind": "componentImport"
     },
     {
-      "FilePath": "c:\\2020-0288\\TORO\\Client\\Pages\\Produccion.razor",
-      "TargetPath": "Pages\\Produccion.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\2020-0288\\TORO\\Client\\Pages\\PreñesView.razor",
-      "TargetPath": "Pages\\PreñesView.razor",
-      "FileKind": "component"
+      "FilePath": "c:\\2020-0288\\TORO\\Client\\Pages\\MotherCow\\_Imports.razor",
+      "TargetPath": "Pages\\MotherCow\\_Imports.razor",
+      "FileKind": "componentImport"
     },
     {
       "FilePath": "c:\\2020-0288\\TORO\\Client\\Shared\\SurveyPrompt.razor",
@@ -18768,13 +18773,38 @@
       "FileKind": "component"
     },
     {
+      "FilePath": "c:\\2020-0288\\TORO\\Client\\Pages\\Preñes\\PreñesCrear.razor",
+      "TargetPath": "Pages\\Preñes\\PreñesCrear.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\2020-0288\\TORO\\Client\\Pages\\Ganado\\GanadoView.razor",
+      "TargetPath": "Pages\\Ganado\\GanadoView.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\2020-0288\\TORO\\Client\\Pages\\Ganado\\NewCow.razor",
+      "TargetPath": "Pages\\Ganado\\NewCow.razor",
+      "FileKind": "component"
+    },
+    {
       "FilePath": "c:\\2020-0288\\TORO\\Client\\Shared\\RedirectToLogin.razor",
       "TargetPath": "Shared\\RedirectToLogin.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\2020-0288\\TORO\\Client\\Pages\\PreñesCrear.razor",
-      "TargetPath": "Pages\\PreñesCrear.razor",
+      "FilePath": "c:\\2020-0288\\TORO\\Client\\Pages\\MotherCow\\MotherCow.razor",
+      "TargetPath": "Pages\\MotherCow\\MotherCow.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\2020-0288\\TORO\\Client\\Pages\\Preñes\\PreñesView.razor",
+      "TargetPath": "Pages\\Preñes\\PreñesView.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\2020-0288\\TORO\\Client\\Pages\\FatherCow\\FatherCow.razor",
+      "TargetPath": "Pages\\FatherCow\\FatherCow.razor",
       "FileKind": "component"
     },
     {
@@ -18793,14 +18823,9 @@
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\2020-0288\\TORO\\Client\\Pages\\NewCow.razor",
-      "TargetPath": "Pages\\NewCow.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\2020-0288\\TORO\\Client\\Pages\\MotherCow.razor",
-      "TargetPath": "Pages\\MotherCow.razor",
-      "FileKind": "component"
+      "FilePath": "c:\\2020-0288\\TORO\\Client\\Pages\\Preñes\\_Imports.razor",
+      "TargetPath": "Pages\\Preñes\\_Imports.razor",
+      "FileKind": "componentImport"
     },
     {
       "FilePath": "c:\\2020-0288\\TORO\\Client\\App.razor",
@@ -18813,14 +18838,14 @@
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\2020-0288\\TORO\\Client\\Pages\\FatherCow.razor",
-      "TargetPath": "Pages\\FatherCow.razor",
+      "FilePath": "c:\\2020-0288\\TORO\\Client\\Pages\\Produccion\\Produccion.razor",
+      "TargetPath": "Pages\\Produccion\\Produccion.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\2020-0288\\TORO\\Client\\Pages\\GanadoView.razor",
-      "TargetPath": "Pages\\GanadoView.razor",
-      "FileKind": "component"
+      "FilePath": "c:\\2020-0288\\TORO\\Client\\Pages\\FatherCow\\_Imports.razor",
+      "TargetPath": "Pages\\FatherCow\\_Imports.razor",
+      "FileKind": "componentImport"
     },
     {
       "FilePath": "c:\\2020-0288\\TORO\\Client\\Pages\\Index.razor",
