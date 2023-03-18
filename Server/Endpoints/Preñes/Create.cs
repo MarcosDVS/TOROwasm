@@ -27,7 +27,7 @@ public class Create : EndpointBaseAsync.WithRequest<Request>.WithActionResult<Re
     {
         try{
             #region  Validaciones
-            var rol = await DbContext.Preñeses.FirstOrDefaultAsync(r => r.IdVaca == request.IdVaca,cancellationToken);
+            var rol = await DbContext.Preñeses.FirstOrDefaultAsync(r => r.IdVaca == request.IdVaca, cancellationToken);
             if(rol != null)
                 return Respuesta.Fail($"Ya existe un rol con el nombre'({request.IdVaca})'.");
             #endregion

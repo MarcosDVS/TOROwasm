@@ -27,7 +27,7 @@ public override async Task<ActionResult<Respuesta>> HandleAsync (Request request
 {
     try{
         #region  Validaciones
-        var rol = await DbContext.Father.FirstOrDefaultAsync(r => r.ColorHijo.ToLower() == request.ColorHijo.ToLower(),cancellationToken);
+        var rol = await DbContext.Father.FirstOrDefaultAsync(r => r.IdPadre == request.IdPadre, cancellationToken);
         if(rol != null)
             return Respuesta.Fail($"Ya existe un rol con el nombre'({request.IdPadre})'.");
         #endregion

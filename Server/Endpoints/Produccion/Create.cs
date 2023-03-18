@@ -27,9 +27,9 @@ public override async Task<ActionResult<Respuesta>> HandleAsync (Request request
 {
     try{
         #region  Validaciones
-        var rol = await DbContext.Producciones.FirstOrDefaultAsync(r => r.VacasProd == request.VacasProd,cancellationToken);
+        var rol = await DbContext.Producciones.FirstOrDefaultAsync(r => r.FechaProd == request.FechaProd ,cancellationToken);
         if(rol != null)
-            return Respuesta.Fail($"Ya existe un rol con el nombre'({request.VacasProd})'.");
+            return Respuesta.Fail($"Ya existe un rol con el nombre'({request.FechaProd})'.");
         #endregion
        rol = ProdLeche.Crear(request);
         DbContext.Producciones.Add(rol);
