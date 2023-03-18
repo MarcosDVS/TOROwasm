@@ -2,10 +2,10 @@ namespace TORO.Shared.Records;
 
 public class preñesRecord
 {
- public preñesRecord()
- {
+    public preñesRecord()
+    {
 
- }
+    }
 
     public preñesRecord(int iD, int idVaca, string razaVaca, int idToro, string razaToro, string metodoPreñes, DateTime fechaPre, DateTime pFP, string? observacion)
     {

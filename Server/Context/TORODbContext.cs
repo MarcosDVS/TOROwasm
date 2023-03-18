@@ -14,7 +14,7 @@ public interface ITORODbContext
     DbSet<Bovinos> bovinos { get; set; }
     DbSet<Padres> Father { get; set; }
     DbSet<Madres> Mother { get; set; }
-    DbSet<Preñes> Preñeses { get; set; }
+    DbSet<EmbVaca> Preñeses { get; set; }
     DbSet<ProdLeche> Producciones { get; set; }
 
     Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
@@ -40,7 +40,7 @@ internal class TORODbContext : DbContext, ITORODbContext
     public DbSet<Bovinos> bovinos { get; set; } = null!;
     public DbSet<Padres> Father { get; set; } = null!;
     public DbSet<Madres> Mother { get; set; } = null!;
-    public DbSet<Preñes> Preñeses { get; set; } = null!;
+    public DbSet<EmbVaca> Preñeses { get; set; } = null!;
     public DbSet<ProdLeche> Producciones { get; set; } = null!;
 
     #endregion
