@@ -1,20 +1,20 @@
 using System;
 using System.ComponentModel.DataAnnotations;
-using TORO.Shared.Models;
+using TORO.Shared.Requests;
 using TORO.Shared.Records;
 
 namespace TORO.Server.Models;
 
-public class Produccion
+public class ProdLeche
 {
     
-     public Produccion()
+     public ProdLeche()
      {
     
     
     }
 
-    public Produccion(DateTime fechaProd, int vacasProd, int litrosLeche)
+    public ProdLeche(DateTime fechaProd, int vacasProd, int litrosLeche)
     {
         FechaProd = fechaProd;
         VacasProd = vacasProd;
@@ -27,9 +27,9 @@ public class Produccion
     public int VacasProd { get; set; }
     public int LitrosLeche { get; set; }
 
-    public static Produccion Crear(ProduccionCreateRequest request)
+    public static ProdLeche Crear(ProduccionCreateRequest request)
     {
-        return new Produccion (request.FechaProd, request.VacasProd, request.LitrosLeche);
+        return new ProdLeche (request.FechaProd, request.VacasProd, request.LitrosLeche);
     }
 
     public void Modificar(ProduccionUpdateRequest request)

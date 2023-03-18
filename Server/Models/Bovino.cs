@@ -1,16 +1,16 @@
 using System.ComponentModel.DataAnnotations;
-using TORO.Shared.Models;
+using TORO.Shared.Requests;
 using TORO.Shared.Records;
 
 namespace TORO.Server.Models;
 
-public class Bovino
+public class Bovinos
 {
-    public Bovino()
+    public Bovinos()
     {
         
     }
-    public Bovino(string raza, string color, string sexo, int? idPadre, int? idMadre, DateTime fechaNac, int? pesoNacer, int? costo, string? observacion)
+    public Bovinos(string raza, string color, string sexo, int? idPadre, int? idMadre, DateTime fechaNac, int? pesoNacer, int? costo, string? observacion)
     {
         Raza = raza;
         Color = color;
@@ -34,12 +34,12 @@ public class Bovino
     public int? PesoNacer { get; set; } = 25;
     public int? Costo { get; set; }
     public string? Observacion { get; set; }
-    public virtual Padre Padres { get; set; } = null!;
-    public virtual Madre Madres { get; set; } = null!;
+    public virtual Padres Father { get; set; } = null!;
+    public virtual Madres Mother { get; set; } = null!;
 
-    public static Bovino Crear(BovinoCreateRequest request)
+    public static Bovinos Crear(BovinoCreateRequest request)
     {
-        return new Bovino(request.Raza, request.Color, request.Sexo, request.IdPadre, request.IdMadre,
+        return new Bovinos(request.Raza, request.Color, request.Sexo, request.IdPadre, request.IdMadre,
         request.FechaNac, request.PesoNacer, request.Costo, request.Observacion);
     }
 
@@ -58,7 +58,7 @@ public class Bovino
 
     public BovinoRecord ToRecord()
     {
-        return new BovinoRecord(IdBovino, Raza, Color, Sexo, Padres.ToRecord(), Madres.ToRecord(), 
+        return new BovinoRecord(IdBovino, Raza, Color, Sexo, Father.ToRecord(), Mother.ToRecord(), 
         FechaNac, PesoNacer, Costo, Observacion);
     }
 }

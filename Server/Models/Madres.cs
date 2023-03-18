@@ -1,16 +1,16 @@
 using System.ComponentModel.DataAnnotations;
-using TORO.Shared.Models;
+using TORO.Shared.Requests;
 using TORO.Shared.Records;
 
 namespace TORO.Server.Models;
 
-public class Madre
+public class Madres
 {
-    public Madre()
+    public Madres()
     {
         
     }
-    public Madre(int idMadre, int idHijo, string? colorHijo, string sexoHijo, DateTime fechaNac)
+    public Madres(int idMadre, int idHijo, string? colorHijo, string sexoHijo, DateTime fechaNac)
     {
         IdMadre = idMadre;
         IdHijo = idHijo;
@@ -26,11 +26,11 @@ public class Madre
     public string? ColorHijo { get; set; }
     public string SexoHijo { get; set; } = null!;
     public DateTime FechaNac { get; set; } = DateTime.Now;
-    public virtual Bovino Hijo { get; set; } = null!;
+    public virtual Bovinos Hijo { get; set; } = null!;
 
-    public static Madre Crear(MadreCreateRequest request)
+    public static Madres Crear(MadreCreateRequest request)
     {
-        return new Madre(request.IdMadre, request.IdHijo, request.ColorHijo, request.SexoHijo, request.FechaNac);
+        return new Madres(request.IdMadre, request.IdHijo, request.ColorHijo, request.SexoHijo, request.FechaNac);
     }
 
     public void Modificar(MadreUpdateRequest request)
