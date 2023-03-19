@@ -1,19 +1,15 @@
 @page "/produccion"
 
-
 <h1>Datos de Producción diarios</h1>
 <button @onclick="Agregar" class="btn btn-success">Agregar</button>
 
-<div class="container">
-    <table class="table">
         <thead>
-        <tr>
-            <th>Fecha/Produccion</th>
-            <th>Vacas/Producción</th>
-            <th>Litros/Leche</th>
+            <tr>
+                <th>Fecha/Produccion</th>
+                <th>Vacas/Producción</th>
+                <th>Litros/Leche</th>
             </tr>
         </thead>
-        <ul>
         @foreach (var produc in Produc)
         {
             <tbody>
@@ -25,9 +21,6 @@
                 </tr>
             </tbody>
         }
-        </ul>
-    </table>
-</div>
 
 @code 
 {

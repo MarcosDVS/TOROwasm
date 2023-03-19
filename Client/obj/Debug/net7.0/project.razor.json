@@ -194,102 +194,6 @@
         }
       },
       {
-        "HashCode": 552322272,
-        "Kind": "Components.Component",
-        "Name": "TORO.Client.Pages.Preñes.PreñesView",
-        "AssemblyName": "TORO.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "PreñesView"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TORO.Client.Pages.Preñes.PreñesView",
-          "Common.TypeNamespace": "TORO.Client.Pages.Preñes",
-          "Common.TypeNameIdentifier": "PreñesView"
-        }
-      },
-      {
-        "HashCode": 1334752347,
-        "Kind": "Components.Component",
-        "Name": "TORO.Client.Pages.Preñes.PreñesView",
-        "AssemblyName": "TORO.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "TORO.Client.Pages.Preñes.PreñesView"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TORO.Client.Pages.Preñes.PreñesView",
-          "Common.TypeNamespace": "TORO.Client.Pages.Preñes",
-          "Common.TypeNameIdentifier": "PreñesView",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1234308282,
-        "Kind": "Components.Component",
-        "Name": "TORO.Client.Pages.Preñes.AddEditPre",
-        "AssemblyName": "TORO.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "AddEditPre"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Id",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "Id",
-              "Common.GloballyQualifiedTypeName": "global::System.Int32"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TORO.Client.Pages.Preñes.AddEditPre",
-          "Common.TypeNamespace": "TORO.Client.Pages.Preñes",
-          "Common.TypeNameIdentifier": "AddEditPre"
-        }
-      },
-      {
-        "HashCode": -1940270261,
-        "Kind": "Components.Component",
-        "Name": "TORO.Client.Pages.Preñes.AddEditPre",
-        "AssemblyName": "TORO.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "TORO.Client.Pages.Preñes.AddEditPre"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Id",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "Id",
-              "Common.GloballyQualifiedTypeName": "global::System.Int32"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TORO.Client.Pages.Preñes.AddEditPre",
-          "Common.TypeNamespace": "TORO.Client.Pages.Preñes",
-          "Common.TypeNameIdentifier": "AddEditPre",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": 197149146,
         "Kind": "Components.Component",
         "Name": "TORO.Client.Pages.UsuariosRoles.Index",
@@ -382,6 +286,102 @@
           "Common.TypeName": "TORO.Client.Pages.UsuariosRoles.AddEditRol",
           "Common.TypeNamespace": "TORO.Client.Pages.UsuariosRoles",
           "Common.TypeNameIdentifier": "AddEditRol",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1234308282,
+        "Kind": "Components.Component",
+        "Name": "TORO.Client.Pages.Preñes.AddEditPre",
+        "AssemblyName": "TORO.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "AddEditPre"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "Id",
+              "Common.GloballyQualifiedTypeName": "global::System.Int32"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "TORO.Client.Pages.Preñes.AddEditPre",
+          "Common.TypeNamespace": "TORO.Client.Pages.Preñes",
+          "Common.TypeNameIdentifier": "AddEditPre"
+        }
+      },
+      {
+        "HashCode": -1940270261,
+        "Kind": "Components.Component",
+        "Name": "TORO.Client.Pages.Preñes.AddEditPre",
+        "AssemblyName": "TORO.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "TORO.Client.Pages.Preñes.AddEditPre"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "Id",
+              "Common.GloballyQualifiedTypeName": "global::System.Int32"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "TORO.Client.Pages.Preñes.AddEditPre",
+          "Common.TypeNamespace": "TORO.Client.Pages.Preñes",
+          "Common.TypeNameIdentifier": "AddEditPre",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 552322272,
+        "Kind": "Components.Component",
+        "Name": "TORO.Client.Pages.Preñes.PreñesView",
+        "AssemblyName": "TORO.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "PreñesView"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "TORO.Client.Pages.Preñes.PreñesView",
+          "Common.TypeNamespace": "TORO.Client.Pages.Preñes",
+          "Common.TypeNameIdentifier": "PreñesView"
+        }
+      },
+      {
+        "HashCode": 1334752347,
+        "Kind": "Components.Component",
+        "Name": "TORO.Client.Pages.Preñes.PreñesView",
+        "AssemblyName": "TORO.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "TORO.Client.Pages.Preñes.PreñesView"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "TORO.Client.Pages.Preñes.PreñesView",
+          "Common.TypeNamespace": "TORO.Client.Pages.Preñes",
+          "Common.TypeNameIdentifier": "PreñesView",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },

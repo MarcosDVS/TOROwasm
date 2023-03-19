@@ -30,22 +30,22 @@
     public string Titulo => Id>0? "Editar Producción":"Crear Producción";
     public ProduccionUpdateRequest Produc { get; set; } = new ProduccionUpdateRequest();
 
-        protected override async Task OnInitializedAsync()
+    protected override async Task OnInitializedAsync()
+    {
+        if(Id!=0)
         {
-            if(Id!=0)
+            var resultado = await produccionesManager.GetByIdAsync(Id);
+            if(resultado.Succeeded)
             {
-                var resultado = await produccionesManager.GetByIdAsync(Id);
-                if(resultado.Succeeded)
-                {
-                    Produc.ID = resultado.Data.ID;
-                    Produc.FechaProd = resultado.Data.FechaProd;
-                    Produc.VacasProd = resultado.Data.VacasProd;
-                    Produc.LitrosLeche = resultado.Data.LitrosLeche;
+                Produc.ID = resultado.Data.ID;
+                Produc.FechaProd = resultado.Data.FechaProd;
+                Produc.VacasProd = resultado.Data.VacasProd;
+                Produc.LitrosLeche = resultado.Data.LitrosLeche;
 
-                    StateHasChanged();
-                }
+                StateHasChanged();
             }
         }
+    }
     
     public async void Send()
     {

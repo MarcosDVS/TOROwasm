@@ -9,105 +9,105 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = TORO.Client
 build_property.RootNamespace = TORO.Client
-build_property.ProjectDir = c:\2020-0288\TORO\Client\
+build_property.ProjectDir = C:\2020-0288\TORO\Client\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = c:\2020-0288\TORO\Client
+build_property.MSBuildProjectDirectory = C:\2020-0288\TORO\Client
 build_property._RazorSourceGeneratorDebug = 
 
-[c:/2020-0288/TORO/Client/App.razor]
+[C:/2020-0288/TORO/Client/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/2020-0288/TORO/Client/Pages/FatherCow/FatherCow.razor]
+[C:/2020-0288/TORO/Client/Pages/FatherCow/FatherCow.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmF0aGVyQ293XEZhdGhlckNvdy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/2020-0288/TORO/Client/Pages/FatherCow/_Imports.razor]
+[C:/2020-0288/TORO/Client/Pages/FatherCow/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmF0aGVyQ293XF9JbXBvcnRzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/2020-0288/TORO/Client/Pages/Ganado/GanadoView.razor]
+[C:/2020-0288/TORO/Client/Pages/Ganado/GanadoView.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2FuYWRvXEdhbmFkb1ZpZXcucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/2020-0288/TORO/Client/Pages/Ganado/NewCow.razor]
+[C:/2020-0288/TORO/Client/Pages/Ganado/NewCow.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2FuYWRvXE5ld0Nvdy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/2020-0288/TORO/Client/Pages/Ganado/_Imports.razor]
+[C:/2020-0288/TORO/Client/Pages/Ganado/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2FuYWRvXF9JbXBvcnRzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/2020-0288/TORO/Client/Pages/Index.razor]
+[C:/2020-0288/TORO/Client/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/2020-0288/TORO/Client/Pages/MotherCow/MotherCow.razor]
+[C:/2020-0288/TORO/Client/Pages/MotherCow/MotherCow.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW90aGVyQ293XE1vdGhlckNvdy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/2020-0288/TORO/Client/Pages/MotherCow/_Imports.razor]
+[C:/2020-0288/TORO/Client/Pages/MotherCow/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW90aGVyQ293XF9JbXBvcnRzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/2020-0288/TORO/Client/Pages/Preñes/AddEditPre.razor]
+[C:/2020-0288/TORO/Client/Pages/Preñes/AddEditPre.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJlw7Flc1xBZGRFZGl0UHJlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/2020-0288/TORO/Client/Pages/Preñes/PreñesView.razor]
+[C:/2020-0288/TORO/Client/Pages/Preñes/PreñesView.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJlw7Flc1xQcmXDsWVzVmlldy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/2020-0288/TORO/Client/Pages/Preñes/_Imports.razor]
+[C:/2020-0288/TORO/Client/Pages/Preñes/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJlw7Flc1xfSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/2020-0288/TORO/Client/Pages/Produc/AddEditProduc.razor]
+[C:/2020-0288/TORO/Client/Pages/Produc/AddEditProduc.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjXEFkZEVkaXRQcm9kdWMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/2020-0288/TORO/Client/Pages/Produc/Produccion.razor]
+[C:/2020-0288/TORO/Client/Pages/Produc/Produccion.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjXFByb2R1Y2Npb24ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/2020-0288/TORO/Client/Pages/Produc/_Imports.razor]
+[C:/2020-0288/TORO/Client/Pages/Produc/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjXF9JbXBvcnRzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/2020-0288/TORO/Client/Pages/UsuariosRoles/AddEditRol.razor]
+[C:/2020-0288/TORO/Client/Pages/UsuariosRoles/AddEditRol.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXN1YXJpb3NSb2xlc1xBZGRFZGl0Um9sLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/2020-0288/TORO/Client/Pages/UsuariosRoles/Index.razor]
+[C:/2020-0288/TORO/Client/Pages/UsuariosRoles/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXN1YXJpb3NSb2xlc1xJbmRleC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/2020-0288/TORO/Client/Pages/UsuariosRoles/_Imports.razor]
+[C:/2020-0288/TORO/Client/Pages/UsuariosRoles/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXN1YXJpb3NSb2xlc1xfSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/2020-0288/TORO/Client/Shared/LoginDisplay.razor]
+[C:/2020-0288/TORO/Client/Shared/LoginDisplay.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExvZ2luRGlzcGxheS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/2020-0288/TORO/Client/Shared/RedirectToLogin.razor]
+[C:/2020-0288/TORO/Client/Shared/RedirectToLogin.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFJlZGlyZWN0VG9Mb2dpbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/2020-0288/TORO/Client/Shared/SurveyPrompt.razor]
+[C:/2020-0288/TORO/Client/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/2020-0288/TORO/Client/_Imports.razor]
+[C:/2020-0288/TORO/Client/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/2020-0288/TORO/Client/Shared/MainLayout.razor]
+[C:/2020-0288/TORO/Client/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-uev3n7y6ti
 
-[c:/2020-0288/TORO/Client/Shared/NavMenu.razor]
+[C:/2020-0288/TORO/Client/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-e69mrzbbcs
