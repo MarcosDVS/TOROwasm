@@ -36,9 +36,16 @@ public class EmbVaca
    
     public static EmbVaca Crear(PreñesCreateRequest request)
     {
-        return new EmbVaca (request.IdVaca,request.RazaVaca,request.IdToro,
-        request.RazaToro,request.MetodoPreñes,request.FechaPre,request.PFP,
-        request.Observacion);
+        return new EmbVaca (
+            request.IdVaca,
+            request.RazaVaca,
+            request.IdToro,
+            request.RazaToro,
+            request.MetodoPreñes,
+            request.FechaPre,
+            request.PFP, 
+            request.Observacion
+        );
     }
 
     public void Modificar(PreñesUpdateRequest request)

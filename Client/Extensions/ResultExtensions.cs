@@ -3,7 +3,6 @@ using Newtonsoft.Json;
 
 namespace TORO.Client.Extensions;
 
-
 internal static class ResultExtensions
 {
    internal static async Task<Result<T>> ToResult<T>(this HttpResponseMessage response)

@@ -7,19 +7,17 @@ public class PadreRecord
     {
         
     }
-    public PadreRecord(int iD, int idPadre, BovinoRecord hijo, string? colorHijo, string sexoHijo, DateTime fechaNac)
+    public PadreRecord(int iD, int idPadre, string? colorHijo, string sexoHijo, DateTime fechaNac)
     {
-        ID = iD;
-        IdPadre = idPadre;
-        Hijo = hijo;
-        ColorHijo = colorHijo;
-        SexoHijo = sexoHijo;
-        FechaNac = fechaNac;
+        this.ID = iD;
+        this.IdPadre = idPadre;
+        this.ColorHijo = colorHijo;
+        this.SexoHijo = sexoHijo;
+        this.FechaNac = fechaNac;
     }
 
     public int ID { get; set; }
     public int IdPadre { get; set; }
-    public BovinoRecord Hijo { get; set; } = default!;
     public string? ColorHijo { get; set; }
     public string SexoHijo { get; set; } = null!;
     public DateTime FechaNac { get; set; } = DateTime.Now;

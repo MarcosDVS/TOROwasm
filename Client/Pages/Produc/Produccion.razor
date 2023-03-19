@@ -1,0 +1,53 @@
+@page "/produccion"
+
+
+<h1>Datos de Producción diarios</h1>
+<button @onclick="Agregar" class="btn btn-success">Agregar</button>
+
+<div class="container">
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Fecha/Produccion</th>
+            <th>Vacas/Producción</th>
+            <th>Litros/Leche</th>
+            </tr>
+        </thead>
+        <ul>
+        @foreach (var produc in Produc)
+        {
+            <tbody>
+                <tr>
+                    <td>@produc.FechaProd </td>
+                    <td>@produc.VacasProd </td>
+                    <td>@produc.LitrosLeche </td>
+                    <td><span class="btn btn-outline-warning" @onclick="()=>Editar(produc.ID)">Editar</span></td>
+                </tr>
+            </tbody>
+        }
+        </ul>
+    </table>
+</div>
+
+@code 
+{
+    public List<ProduccionRecord>? Produc { get; set; }
+    protected override async Task OnInitializedAsync()
+    {
+        var response = await produccionesManager.GetAsync();
+        if(response.Succeeded)
+        {
+            Produc = response.Items.ToList();
+        }
+    }
+
+    public void Agregar()
+    {
+        urlHelper.NavigateTo("/produccion/crear",false);
+    }
+
+    public void Editar(int Id)
+    {
+        urlHelper.NavigateTo($"/produccion/editar/{Id}",false);
+    }    
+}

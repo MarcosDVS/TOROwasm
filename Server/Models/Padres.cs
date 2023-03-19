@@ -18,18 +18,23 @@ public class Padres
         SexoHijo = sexoHijo;
         FechaNac = fechaNac;
     }
-    [Key]
+    [Key] 
     public int ID { get; set; }
     public int IdPadre { get; set; }
     public int IdHijo { get; set; }
-    public virtual Bovinos Hijo { get; set; } = null!;
     public string? ColorHijo { get; set; }
     public string SexoHijo { get; set; } = null!;
     public DateTime FechaNac { get; set; } = DateTime.Now;
 
     public static Padres Crear(PadreCreateRequest request)
     {
-        return new Padres(request.IdPadre, request.IdHijo, request.ColorHijo, request.SexoHijo, request.FechaNac);
+        return new Padres(
+            request.IdPadre, 
+            request.IdHijo, 
+            request.ColorHijo, 
+            request.SexoHijo, 
+            request.FechaNac
+        );
     }
 
     public void Modificar(PadreUpdateRequest request)
@@ -43,6 +48,6 @@ public class Padres
 
     public PadreRecord ToRecord()
     {
-        return new PadreRecord(ID, IdPadre, Hijo.ToRecord(), ColorHijo, SexoHijo, FechaNac);
+        return new PadreRecord(ID, IdPadre, ColorHijo, SexoHijo, FechaNac);
     }
 }

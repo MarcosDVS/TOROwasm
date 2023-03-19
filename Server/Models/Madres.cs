@@ -26,13 +26,17 @@ public class Madres
     public string? ColorHijo { get; set; }
     public string SexoHijo { get; set; } = null!;
     public DateTime FechaNac { get; set; } = DateTime.Now;
-    public virtual Bovinos Hijo { get; set; } = null!;
 
     public static Madres Crear(MadreCreateRequest request)
     {
-        return new Madres(request.IdMadre, request.IdHijo, request.ColorHijo, request.SexoHijo, request.FechaNac);
+        return new Madres(
+            request.IdMadre, 
+            request.IdHijo, 
+            request.ColorHijo, 
+            request.SexoHijo, 
+            request.FechaNac
+        );
     }
-
     public void Modificar(MadreUpdateRequest request)
     {
         if(IdMadre != request.IdMadre) IdMadre = request.IdMadre;
@@ -43,6 +47,6 @@ public class Madres
     }
     public MadreRecord ToRecord()
     {
-        return new MadreRecord(ID, IdMadre, Hijo.ToRecord(), ColorHijo, SexoHijo, FechaNac);
+        return new MadreRecord(ID, IdMadre, ColorHijo, SexoHijo, FechaNac);
     }
 }

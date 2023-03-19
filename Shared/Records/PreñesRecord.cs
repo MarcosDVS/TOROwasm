@@ -9,15 +9,15 @@ public class preñesRecord
 
     public preñesRecord(int iD, int idVaca, string razaVaca, int idToro, string razaToro, string metodoPreñes, DateTime fechaPre, DateTime pFP, string? observacion)
     {
-        ID = iD;
-        IdVaca = idVaca;
-        RazaVaca = razaVaca;
-        IdToro = idToro;
-        RazaToro = razaToro;
-        MetodoPreñes = metodoPreñes;
-        FechaPre = fechaPre;
-        PFP = pFP;
-        Observacion = observacion;
+        this.ID = iD;
+        this.IdVaca = idVaca;
+        this.RazaVaca = razaVaca;
+        this.IdToro = idToro;
+        this.RazaToro = razaToro;
+        this.MetodoPreñes = metodoPreñes;
+        this.FechaPre = fechaPre;
+        this.PFP = pFP;
+        this.Observacion = observacion;
     }
 
     public int ID { get; set; }

@@ -1,0 +1,57 @@
+@page "/produccion/crear"
+@page "/produccion/editar/{Id:int}"
+
+<EditForm Model="@Produc" OnValidSubmit="Send">
+<h1>@Titulo</h1>
+    <DataAnnotationsValidator/>
+    <ValidationSummary/>
+
+    <div class="form-group">       
+        <label for="">Fecha de Producción</label>
+        <InputDate class="form-control" @bind-Value="Produc.FechaProd"/>
+    </div>
+    <div class="form-group">
+        <label for="">Vacas en Producción</label>
+        <InputNumber @bind-Value="Produc.VacasProd"/>
+    </div>
+    <div class="form-group">
+        <label for="ckbEditar">Litros de Leche</label>
+        <InputNumber @bind-Value="Produc.LitrosLeche"/>
+    </div>
+
+    <button type="submit" class="mt-2 btn btn-success">OK</button>
+</EditForm>
+
+@code
+{
+    [Parameter]
+    public int Id { get; set; } = 0;
+
+    public string Titulo => Id>0? "Editar Producción":"Crear Producción";
+    public ProduccionUpdateRequest Produc { get; set; } = new ProduccionUpdateRequest();
+
+        protected override async Task OnInitializedAsync()
+        {
+            if(Id!=0)
+            {
+                var resultado = await produccionesManager.GetByIdAsync(Id);
+                if(resultado.Succeeded)
+                {
+                    Produc.ID = resultado.Data.ID;
+                    Produc.FechaProd = resultado.Data.FechaProd;
+                    Produc.VacasProd = resultado.Data.VacasProd;
+                    Produc.LitrosLeche = resultado.Data.LitrosLeche;
+
+                    StateHasChanged();
+                }
+            }
+        }
+    
+    public async void Send()
+    {
+        var resultado = await produccionesManager.CreateAsync(Produc);
+
+        if(resultado.Succeeded) urlHelper.NavigateTo("/produccion");
+    }
+}
+

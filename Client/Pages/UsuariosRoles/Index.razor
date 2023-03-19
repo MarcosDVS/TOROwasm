@@ -1,13 +1,14 @@
 @page "/roles"
 
 <h1>Roles</h1>
+<button @onclick="Agregar">Agregar</button>
 
 @if(Roles != null)
 {
     <ul>
         @foreach (var rol in Roles)
         {
-            <li>@rol.Nombre</li>
+            <li>@rol.Nombre <span class="btn btn-outline-warning" @onclick="()=>Editar(rol.Id)">Editar</span></li>
         }
     </ul>
 }
@@ -18,14 +19,24 @@ else
 
 @code
 {
-    public List<UsuarioRolRecord> Roles { get; set; }
-        protected override async Task OnInitializedAsync()
+    public List<UsuarioRolRecord>? Roles { get; set; }
+    protected override async Task OnInitializedAsync()
+    {
+        var response = await rolesManager.GetAsync();
+        if(response.Succeeded)
         {
-            var response = await rolesManager.GetAsync();
-            if(response.Succeeded)
-            {
-                Roles = response.Items.ToList();
-            }
+            Roles = response.Items.ToList();
         }
+    }
+
+    public void Agregar()
+    {
+        urlHelper.NavigateTo("/rol/crear",false);
+    }
+
+    public void Editar(int Id)
+    {
+        urlHelper.NavigateTo($"/rol/editar/{Id}",false);
+    }
 }
 

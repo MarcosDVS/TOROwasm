@@ -23,6 +23,7 @@ public class Bovinos
         Observacion = observacion;
     }
 
+    #region propiedades
     [Key]
     public int IdBovino { get; set; }
     public string Raza { get; set; } = null!;
@@ -34,15 +35,25 @@ public class Bovinos
     public int? PesoNacer { get; set; } = 25;
     public int? Costo { get; set; }
     public string? Observacion { get; set; }
-    public virtual Padres Father { get; set; } = null!;
+    public virtual Padres padre { get; set; } = null!;
     public virtual Madres Mother { get; set; } = null!;
+    #endregion
 
+    #region Funciones
     public static Bovinos Crear(BovinoCreateRequest request)
     {
-        return new Bovinos(request.Raza, request.Color, request.Sexo, request.IdPadre, request.IdMadre,
-        request.FechaNac, request.PesoNacer, request.Costo, request.Observacion);
+        return new Bovinos(
+            request.Raza,
+            request.Color,
+            request.Sexo,
+            request.IdPadre,
+            request.IdMadre,
+            request.FechaNac,
+            request.PesoNacer,
+            request.Costo,
+            request.Observacion
+        );
     }
-
     public void Modificar(BovinoUpdateRequest request)
     {
         if(Raza != request.Raza) Raza = request.Raza;
@@ -55,10 +66,11 @@ public class Bovinos
         if(Costo != request.Costo) Costo = request.Costo;
         if(Observacion != request.Observacion) Observacion = request.Observacion;
     }
-
+    #endregion
+    
     public BovinoRecord ToRecord()
     {
-        return new BovinoRecord(IdBovino, Raza, Color, Sexo, Father.ToRecord(), Mother.ToRecord(), 
+        return new BovinoRecord(IdBovino, Raza, Color, Sexo, padre.ToRecord(), Mother.ToRecord(), 
         FechaNac, PesoNacer, Costo, Observacion);
     }
 }

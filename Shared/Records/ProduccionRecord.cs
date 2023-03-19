@@ -9,10 +9,10 @@ public class ProduccionRecord
 
     public ProduccionRecord(int iD, DateTime fechaProd, int vacasProd, int litrosLeche)
     {
-        ID = iD;
-        FechaProd = fechaProd;
-        VacasProd = vacasProd;
-        LitrosLeche = litrosLeche;
+        this.ID = iD;
+        this.FechaProd = fechaProd;
+        this.VacasProd = vacasProd;
+        this.LitrosLeche = litrosLeche;
     }
 
     public int ID { get; set; }

@@ -24,11 +24,16 @@ public class Usuarios
     public string Name { get; set; } = null!;
     public string Nickname { get; set; } = null!;
     public string Password { get; set; } = null!;
-    public UsuarioRol UsuarioRol { get; set; } = default!;
+    public UsuarioRol UsuarioRol { get; set; } = null!;
 
     public static Usuarios Crear(UsuarioCreateRequest request) 
     {
-        return new Usuarios(request.UsuarioRolId, request.Name, request.Nickname, request.Password);
+        return new Usuarios(
+            request.UsuarioRolId,
+            request.Name,
+            request.Nickname,
+            request.Password
+        );
     }
 
     public void Modificar(UsuarioUpdateRequest request)

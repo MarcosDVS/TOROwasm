@@ -1,13 +1,13 @@
 using Ardalis.ApiEndpoints;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using TORO.Server.Models;
 using TORO.Server.Context;
 using TORO.Shared.Records;
 using TORO.Shared.Routes;
 using TORO.Shared.Wrapper;
 
 namespace TORO.Server.Endpoints.UsuarioRoles;
+
 using Respuesta = ResultList<UsuarioRolRecord>;
 
 public class Get : EndpointBaseAsync.WithoutRequest.WithActionResult<Respuesta>

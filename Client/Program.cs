@@ -13,7 +13,13 @@ builder.Services.AddHttpClient("TORO.ServerAPI", client => client.BaseAddress = 
 
 // Supply HttpClient instances that include access tokens when making requests to the server project
 builder.Services.AddScoped(sp => sp.GetRequiredService<IHttpClientFactory>().CreateClient("TORO.ServerAPI"));
-builder.Services.AddScoped<IUsuarioRolManager,UsuarioRolManager>();
+builder.Services.AddScoped<IUsuarioRolManager, UsuarioRolManager>();
+builder.Services.AddScoped<IUsuarioManager, UsuarioManager>();
+builder.Services.AddScoped<IProduccionManager, ProduccionManager>();
+builder.Services.AddScoped<IPreñesManager, PreñesManager>();
+builder.Services.AddScoped<IPadreManager, PadreManager>();
+builder.Services.AddScoped<IMadreManager, MadreManager>();
+builder.Services.AddScoped<IBovinoManager, BovinoManager>();
 
 builder.Services.AddMsalAuthentication(options =>
 {

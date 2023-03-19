@@ -45,7 +45,7 @@ public class MadreRouteManager:RouteApiBase
 
 public class ProduccionRouteManager:RouteApiBase
 {
-    public const string BASE = $"{API}/produccino";
+    public const string BASE = $"{API}/produccion";
     public const string GetById = $"{BASE}/{IdParameter}";
     public static string BuilRoute(int Id) => GetById.Replace(IdParameter,Id.ToString());
 }

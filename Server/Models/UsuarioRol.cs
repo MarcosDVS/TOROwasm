@@ -9,34 +9,34 @@ public class UsuarioRol
     [Key]
     public int Id { get; set; }
     public string Nombre { get; set; } = null!;
-    public bool PermisoCrear { get; set; }
-    public bool PermisoEditar { get; set; }
-    public bool PermisoEliminar { get; set; }
+    public bool PermisoParaCrear { get; set; }
+    public bool PermisoParaEditar { get; set; }
+    public bool PermisoParaEliminar { get; set; }
     
     public static UsuarioRol Crear(UsuarioRolCreateRequest request)
     {
         return new UsuarioRol()
         {
             Nombre = request.Nombre,
-            PermisoCrear = request.PermisoCrear,
-            PermisoEditar = request.PermisoEditar,
-            PermisoEliminar = request.PermisoEliminar
+            PermisoParaCrear = request.PermisoParaCrear,
+            PermisoParaEditar = request.PermisoParaEditar,
+            PermisoParaEliminar = request.PermisoParaEliminar
         };
     }
     public void Modificar(UsuarioRolUpdateRequest request)
     {
         if(Nombre != request.Nombre)
             Nombre = request.Nombre;
-        if(PermisoCrear != request.PermisoCrear)
-            PermisoCrear = request.PermisoCrear;
-        if(PermisoEditar != request.PermisoEditar)
-            PermisoEditar = request.PermisoEditar;
-        if(PermisoEliminar != request.PermisoEliminar)
-            PermisoEliminar = request.PermisoEliminar;
+        if(PermisoParaCrear != request.PermisoParaCrear)
+            PermisoParaCrear = request.PermisoParaCrear;
+        if(PermisoParaEditar != request.PermisoParaEditar)
+            PermisoParaEditar = request.PermisoParaEditar;
+        if(PermisoParaEliminar != request.PermisoParaEliminar)
+            PermisoParaEliminar = request.PermisoParaEliminar;
     }
 
-public UsuarioRolRecord ToRecord()
+public UsuarioRolRecord ToRecord() 
 {
-    return new UsuarioRolRecord(Id, Nombre, PermisoCrear, PermisoEditar, PermisoEliminar);
+    return new UsuarioRolRecord(Id, Nombre, PermisoParaCrear, PermisoParaEditar, PermisoParaEliminar);
 }
 }
