@@ -46,39 +46,278 @@
         }
       },
       {
-        "HashCode": 240233843,
+        "HashCode": -2081124664,
         "Kind": "Components.Component",
-        "Name": "TORO.Client.Pages.Index",
+        "Name": "TORO.Client.Shared.LoginDisplay",
         "AssemblyName": "TORO.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Index"
+            "TagName": "LoginDisplay"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TORO.Client.Pages.Index",
-          "Common.TypeNamespace": "TORO.Client.Pages",
-          "Common.TypeNameIdentifier": "Index"
+          "Common.TypeName": "TORO.Client.Shared.LoginDisplay",
+          "Common.TypeNamespace": "TORO.Client.Shared",
+          "Common.TypeNameIdentifier": "LoginDisplay"
         }
       },
       {
-        "HashCode": -123542317,
+        "HashCode": -756219104,
         "Kind": "Components.Component",
-        "Name": "TORO.Client.Pages.Index",
+        "Name": "TORO.Client.Shared.LoginDisplay",
         "AssemblyName": "TORO.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "TORO.Client.Pages.Index"
+            "TagName": "TORO.Client.Shared.LoginDisplay"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TORO.Client.Pages.Index",
-          "Common.TypeNamespace": "TORO.Client.Pages",
-          "Common.TypeNameIdentifier": "Index",
+          "Common.TypeName": "TORO.Client.Shared.LoginDisplay",
+          "Common.TypeNamespace": "TORO.Client.Shared",
+          "Common.TypeNameIdentifier": "LoginDisplay",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -2063545550,
+        "Kind": "Components.Component",
+        "Name": "TORO.Client.Shared.RedirectToLogin",
+        "AssemblyName": "TORO.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "RedirectToLogin"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "TORO.Client.Shared.RedirectToLogin",
+          "Common.TypeNamespace": "TORO.Client.Shared",
+          "Common.TypeNameIdentifier": "RedirectToLogin"
+        }
+      },
+      {
+        "HashCode": -688127883,
+        "Kind": "Components.Component",
+        "Name": "TORO.Client.Shared.RedirectToLogin",
+        "AssemblyName": "TORO.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "TORO.Client.Shared.RedirectToLogin"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "TORO.Client.Shared.RedirectToLogin",
+          "Common.TypeNamespace": "TORO.Client.Shared",
+          "Common.TypeNameIdentifier": "RedirectToLogin",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1356187280,
+        "Kind": "Components.Component",
+        "Name": "TORO.Client.Shared.SurveyPrompt",
+        "AssemblyName": "TORO.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SurveyPrompt"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "TORO.Client.Shared.SurveyPrompt",
+          "Common.TypeNamespace": "TORO.Client.Shared",
+          "Common.TypeNameIdentifier": "SurveyPrompt"
+        }
+      },
+      {
+        "HashCode": 330206610,
+        "Kind": "Components.Component",
+        "Name": "TORO.Client.Shared.SurveyPrompt",
+        "AssemblyName": "TORO.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "TORO.Client.Shared.SurveyPrompt"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "TORO.Client.Shared.SurveyPrompt",
+          "Common.TypeNamespace": "TORO.Client.Shared",
+          "Common.TypeNameIdentifier": "SurveyPrompt",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 449979650,
+        "Kind": "Components.Component",
+        "Name": "TORO.Client.Shared.MainLayout",
+        "AssemblyName": "TORO.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "MainLayout"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Body",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "Body",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.RenderFragment",
+              "Components.ChildContent": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "TORO.Client.Shared.MainLayout",
+          "Common.TypeNamespace": "TORO.Client.Shared",
+          "Common.TypeNameIdentifier": "MainLayout"
+        }
+      },
+      {
+        "HashCode": 1149547853,
+        "Kind": "Components.Component",
+        "Name": "TORO.Client.Shared.MainLayout",
+        "AssemblyName": "TORO.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "TORO.Client.Shared.MainLayout"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Body",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "Body",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.RenderFragment",
+              "Components.ChildContent": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "TORO.Client.Shared.MainLayout",
+          "Common.TypeNamespace": "TORO.Client.Shared",
+          "Common.TypeNameIdentifier": "MainLayout",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -451338530,
+        "Kind": "Components.ChildContent",
+        "Name": "TORO.Client.Shared.MainLayout.Body",
+        "AssemblyName": "TORO.Client",
+        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Body",
+            "ParentTag": "MainLayout"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "TORO.Client.Shared.MainLayout.Body",
+          "Common.TypeNamespace": "TORO.Client.Shared",
+          "Common.TypeNameIdentifier": "MainLayout",
+          "Components.IsSpecialKind": "Components.ChildContent"
+        }
+      },
+      {
+        "HashCode": 1539724564,
+        "Kind": "Components.ChildContent",
+        "Name": "TORO.Client.Shared.MainLayout.Body",
+        "AssemblyName": "TORO.Client",
+        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Body",
+            "ParentTag": "TORO.Client.Shared.MainLayout"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "TORO.Client.Shared.MainLayout.Body",
+          "Common.TypeNamespace": "TORO.Client.Shared",
+          "Common.TypeNameIdentifier": "MainLayout",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1045078211,
+        "Kind": "Components.Component",
+        "Name": "TORO.Client.Shared.NavMenu",
+        "AssemblyName": "TORO.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "NavMenu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "TORO.Client.Shared.NavMenu",
+          "Common.TypeNamespace": "TORO.Client.Shared",
+          "Common.TypeNameIdentifier": "NavMenu"
+        }
+      },
+      {
+        "HashCode": -1118965329,
+        "Kind": "Components.Component",
+        "Name": "TORO.Client.Shared.NavMenu",
+        "AssemblyName": "TORO.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "TORO.Client.Shared.NavMenu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "TORO.Client.Shared.NavMenu",
+          "Common.TypeNamespace": "TORO.Client.Shared",
+          "Common.TypeNameIdentifier": "NavMenu",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -563,278 +802,39 @@
         }
       },
       {
-        "HashCode": -2081124664,
+        "HashCode": 240233843,
         "Kind": "Components.Component",
-        "Name": "TORO.Client.Shared.LoginDisplay",
+        "Name": "TORO.Client.Pages.Index",
         "AssemblyName": "TORO.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "LoginDisplay"
+            "TagName": "Index"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TORO.Client.Shared.LoginDisplay",
-          "Common.TypeNamespace": "TORO.Client.Shared",
-          "Common.TypeNameIdentifier": "LoginDisplay"
+          "Common.TypeName": "TORO.Client.Pages.Index",
+          "Common.TypeNamespace": "TORO.Client.Pages",
+          "Common.TypeNameIdentifier": "Index"
         }
       },
       {
-        "HashCode": -756219104,
+        "HashCode": -123542317,
         "Kind": "Components.Component",
-        "Name": "TORO.Client.Shared.LoginDisplay",
+        "Name": "TORO.Client.Pages.Index",
         "AssemblyName": "TORO.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "TORO.Client.Shared.LoginDisplay"
+            "TagName": "TORO.Client.Pages.Index"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TORO.Client.Shared.LoginDisplay",
-          "Common.TypeNamespace": "TORO.Client.Shared",
-          "Common.TypeNameIdentifier": "LoginDisplay",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -2063545550,
-        "Kind": "Components.Component",
-        "Name": "TORO.Client.Shared.RedirectToLogin",
-        "AssemblyName": "TORO.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "RedirectToLogin"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TORO.Client.Shared.RedirectToLogin",
-          "Common.TypeNamespace": "TORO.Client.Shared",
-          "Common.TypeNameIdentifier": "RedirectToLogin"
-        }
-      },
-      {
-        "HashCode": -688127883,
-        "Kind": "Components.Component",
-        "Name": "TORO.Client.Shared.RedirectToLogin",
-        "AssemblyName": "TORO.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "TORO.Client.Shared.RedirectToLogin"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TORO.Client.Shared.RedirectToLogin",
-          "Common.TypeNamespace": "TORO.Client.Shared",
-          "Common.TypeNameIdentifier": "RedirectToLogin",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1356187280,
-        "Kind": "Components.Component",
-        "Name": "TORO.Client.Shared.SurveyPrompt",
-        "AssemblyName": "TORO.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title",
-              "Common.GloballyQualifiedTypeName": "global::System.String"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TORO.Client.Shared.SurveyPrompt",
-          "Common.TypeNamespace": "TORO.Client.Shared",
-          "Common.TypeNameIdentifier": "SurveyPrompt"
-        }
-      },
-      {
-        "HashCode": 330206610,
-        "Kind": "Components.Component",
-        "Name": "TORO.Client.Shared.SurveyPrompt",
-        "AssemblyName": "TORO.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "TORO.Client.Shared.SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title",
-              "Common.GloballyQualifiedTypeName": "global::System.String"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TORO.Client.Shared.SurveyPrompt",
-          "Common.TypeNamespace": "TORO.Client.Shared",
-          "Common.TypeNameIdentifier": "SurveyPrompt",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 449979650,
-        "Kind": "Components.Component",
-        "Name": "TORO.Client.Shared.MainLayout",
-        "AssemblyName": "TORO.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "MainLayout"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Body",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
-            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "Body",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.RenderFragment",
-              "Components.ChildContent": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TORO.Client.Shared.MainLayout",
-          "Common.TypeNamespace": "TORO.Client.Shared",
-          "Common.TypeNameIdentifier": "MainLayout"
-        }
-      },
-      {
-        "HashCode": 1149547853,
-        "Kind": "Components.Component",
-        "Name": "TORO.Client.Shared.MainLayout",
-        "AssemblyName": "TORO.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "TORO.Client.Shared.MainLayout"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Body",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
-            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "Body",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.RenderFragment",
-              "Components.ChildContent": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TORO.Client.Shared.MainLayout",
-          "Common.TypeNamespace": "TORO.Client.Shared",
-          "Common.TypeNameIdentifier": "MainLayout",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -451338530,
-        "Kind": "Components.ChildContent",
-        "Name": "TORO.Client.Shared.MainLayout.Body",
-        "AssemblyName": "TORO.Client",
-        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Body",
-            "ParentTag": "MainLayout"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Common.TypeName": "TORO.Client.Shared.MainLayout.Body",
-          "Common.TypeNamespace": "TORO.Client.Shared",
-          "Common.TypeNameIdentifier": "MainLayout",
-          "Components.IsSpecialKind": "Components.ChildContent"
-        }
-      },
-      {
-        "HashCode": 1539724564,
-        "Kind": "Components.ChildContent",
-        "Name": "TORO.Client.Shared.MainLayout.Body",
-        "AssemblyName": "TORO.Client",
-        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Body",
-            "ParentTag": "TORO.Client.Shared.MainLayout"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Common.TypeName": "TORO.Client.Shared.MainLayout.Body",
-          "Common.TypeNamespace": "TORO.Client.Shared",
-          "Common.TypeNameIdentifier": "MainLayout",
-          "Components.IsSpecialKind": "Components.ChildContent",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1045078211,
-        "Kind": "Components.Component",
-        "Name": "TORO.Client.Shared.NavMenu",
-        "AssemblyName": "TORO.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TORO.Client.Shared.NavMenu",
-          "Common.TypeNamespace": "TORO.Client.Shared",
-          "Common.TypeNameIdentifier": "NavMenu"
-        }
-      },
-      {
-        "HashCode": -1118965329,
-        "Kind": "Components.Component",
-        "Name": "TORO.Client.Shared.NavMenu",
-        "AssemblyName": "TORO.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "TORO.Client.Shared.NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TORO.Client.Shared.NavMenu",
-          "Common.TypeNamespace": "TORO.Client.Shared",
-          "Common.TypeNameIdentifier": "NavMenu",
+          "Common.TypeName": "TORO.Client.Pages.Index",
+          "Common.TypeNamespace": "TORO.Client.Pages",
+          "Common.TypeNameIdentifier": "Index",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
