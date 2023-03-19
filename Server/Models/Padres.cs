@@ -48,6 +48,6 @@ public class Padres
 
     public PadreRecord ToRecord()
     {
-        return new PadreRecord(ID, IdPadre, ColorHijo, SexoHijo, FechaNac);
+        return new PadreRecord(ID, IdPadre, IdHijo, ColorHijo, SexoHijo, FechaNac);
     }
 }

@@ -1,42 +1,79 @@
-﻿@page "/mother/cow"
+﻿@page "/madre/crear"
+@page "/madre/crear/{Id:int}"
 
 <PageTitle>Mother Cow</PageTitle>
 <h1>Registrar Bovino</h1>
-<hr />
+
+<EditForm Model="@Produc" OnValidSubmit="Send">
+    <h1>@Titulo</h1>
+    <DataAnnotationsValidator/>
+    <ValidationSummary/>
+    <h3>Madre Del Bovino</h3>
+         
+    <div class="form-group">       
+        <label for="txtID">ID de la Madre</label>
+        <InputNumber class="form-control" @bind-Value="Produc.IdMadre" />
+    </div>
+    <div class="form-group">
+        <label for="">ID del hijo</label>
+        <InputNumber class="form-control" @bind-Value="Produc.IdHijo"/>
+    </div>
+    <div class="form-group">
+        <label for="">Color del hijo</label>
+        <InputNumber class="form-control" @bind-Value="Produc.ColorHijo"/>
+    </div>
+    <div class="form-group">
+        <label for="">Sexo del hijo</label>
+        <InputNumber class="form-control" @bind-Value="Produc.SexoHijo"/>
+    </div>
+    <div class="form-group">
+        <label for="">Fecha de nacimiento</label>
+        <InputDate class="form-control" @bind-Value="Produc.FechaNac"/>
+    </div>
+
+    <button type="submit" class="mt-2 btn btn-success">OK</button>
+</EditForm>
 
 <div class="button" style="float: right;">
     <button class="btn btn-danger" @onclick="back">Back</button>
 </div>
 
-<div class="row">
-    <h3>Madre Del Bovino</h3>
-    <div class="col">
-        <label for="txtID">ID de la Madre</label>
-        <input type="text" id="txtID" class="form-control" />
-    </div>
-    <div class="col">
-        <label for="txtRaza">Raza</label>
-        <input type="text" id="txtRaza" class="form-control" />
-    </div>
-    <div class="col">
-        <label for="txtColor">Color</label>
-        <input type="text" id="txtColor" class="form-control" />
-    </div>
-</div>
-<div class="row mt-3">
-    <button class="btn btn-success" @onclick="Registrar">
-        <span class="oi oi-plus"></span> Registrar
-    </button>
-</div>
-
 @code
 {
+    [Parameter]
+    public int Id { get; set; } = 0;
+
+    public string Titulo => Id>0? "Editar Producción":"Crear Producción";
+    public MadreUpdateRequest Produc { get; set; } = new MadreUpdateRequest();
+
+    protected override async Task OnInitializedAsync()
+    {
+        if(Id!=0)
+        {
+            var resultado = await madresManager.GetByIdAsync(Id);
+            if(resultado.Succeeded)
+            {
+                Produc.ID = resultado.Data.ID;
+                Produc.IdMadre = resultado.Data.IdMadre;
+                Produc.IdHijo = resultado.Data.IdHijo;
+                Produc.ColorHijo = resultado.Data.ColorHijo;
+                Produc.SexoHijo = resultado.Data.SexoHijo;
+                Produc.FechaNac = resultado.Data.FechaNac;
+
+                StateHasChanged();
+            }
+        }
+    }
+    
+    public async void Send()
+    {
+        var resultado = await madresManager.CreateAsync(Produc);
+
+        if(resultado.Succeeded) urlHelper.NavigateTo("/bovino");
+    }
+
     void back()
     {
         urlHelper.NavigateTo("/father/cow");
-    }
-    void Registrar()
-    {
-        urlHelper.NavigateTo("/ganado");
     }
 }

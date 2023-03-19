@@ -5,15 +5,8 @@
 
 <div class="row">
     <div class="col">
-        <input type="search" @bind="Filtro">
-    </div>
-    <div class="col">
-        <button class="btn btn-primary">Buscar</button>
-        <button class="btn btn-warning">
-            <span class="oi oi-pencil"></span>
-        </button>
-        <button class="btn btn-success" @onclick="AgregarVaca">
-            <span class="oi oi-plus"></span> Agregar Vaca
+        <button class="btn btn-success" @onclick="Agregar">
+            <span class="oi oi-plus"></span> Agregar
         </button>
     </div>
 </div>
@@ -33,28 +26,50 @@
         </tr>
     </thead>
     <tbody> 
-        
-            <tr>
-                <td>230 </td>
-                <td>Brahman </td>
-                <td>Rojo </td>
-                <td>Varon </td>
-                <td>130 </td>
-                <td>077 </td>
-                <td>20-02-2022 </td>
-                <td>35 </td>
-                <td>Condiciones optimas </td>
-            </tr>
-        
+        @if(Bovinos != null)
+        {
+            @foreach (var produc in Bovinos)
+            {
+                <tr>
+                    <td>@produc.IdBovino </td>
+                    <td>@produc.Raza </td>
+                    <td>@produc.Color </td>
+                    <td>@produc.Sexo </td>
+                    <td>@produc.Padre </td>
+                    <td>@produc.Madre </td>
+                    <td>@produc.FechaNac </td>
+                    <td>@produc.PesoNacer </td>
+                    <td>@produc.Observacion </td>
+                    <td><span class="btn btn-outline-warning" @onclick="()=>Editar(produc.IdBovino)">Editar</span></td>
+                </tr>
+            }
+        }
+        else
+        {
+            <p>Cargando...</p>
+        }
     </tbody>
 </table>
 
 @code
 {
-    public string Filtro { get; set; } = "";
-
-    void AgregarVaca()
+    public List<BovinoRecord>? Bovinos { get; set; }
+    protected override async Task OnInitializedAsync()
     {
-        urlHelper.NavigateTo("/new/cow");
+        var response = await bovinosManager.GetAsync();
+        if(response.Succeeded)
+        {
+            Bovinos = response.Items.ToList();
+        }
+    }
+
+    public void Agregar()
+    {
+        urlHelper.NavigateTo("/bovino/crear",false);
+    }
+
+    public void Editar(int Id)
+    {
+        urlHelper.NavigateTo($"/bovino/editar/{Id}",false);
     }
 }

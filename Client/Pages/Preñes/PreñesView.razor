@@ -4,18 +4,7 @@
 <h1>Datos de Preñes</h1>
 
 <div class="row">
-    <div class="col">
-        <input type="search" @bind="Filtro">
-    </div>
-    <div class="col">
-        <button class="btn btn-primary">Buscar</button>
-        <button class="btn btn-warning">
-            <span class="oi oi-pencil"></span>
-        </button>
-        <button class="btn btn-success" @onclick="AgregarVaca">
-            <span class="oi oi-plus"></span> Agregar
-        </button>
-    </div>
+    <button class="btn btn-success" @onclick="Agregar">Agregar</button>
 </div>
 
 <table class="table">
@@ -28,37 +17,53 @@
             <th>Metodo/Preñes</th>
             <th>Fecha/Preñes</th>
             <th>PF/Parto</th>
-            <th>FR/Parto</th>
             <th>Observación</th>
         </tr>
     </thead>
     <tbody>
-        
-            <tr>
-                <td>145 </td>
-                <td>Simbrah </td>
-                <td>230 </td>
-                <td>Brahman </td>
-                <td>Monta directa </td>
-                <td>05-01-2023 </td>
-                <td>05-01-2023 </td>
-                <td>NULL</td>
-                <td>Condiciones optimas</td>
-                <td>
-                    <button class="btn btn-danger"><span class="oi oi-x"></span></button>
-                    <button class="btn btn-success"><span class="oi oi-check"></span></button>
-                </td>
-            </tr>
-        
+        @if(Produc != null)
+        {
+            @foreach (var produc in Produc)
+            {
+                <tr>
+                    <td>@produc.IdVaca </td>
+                    <td>@produc.RazaVaca </td>
+                    <td>@produc.IdToro </td>
+                    <td>@produc.RazaToro </td>
+                    <td>@produc.MetodoPreñes </td>
+                    <td>@produc.FechaPre </td>
+                    <td>@produc.PFP </td>
+                    <td>@produc.Observacion </td>
+                    <td><span class="btn btn-outline-warning" @onclick="()=>Editar(produc.ID)">Editar</span></td>
+                </tr>
+            }
+        }
+        else
+        {
+            <p>Cargando...</p>
+        }
     </tbody>
 </table>
 
 @code
 {
-    public string Filtro { get; set; } = "";
-
-    void AgregarVaca()
+    public List<preñesRecord>? Produc { get; set; }
+    protected override async Task OnInitializedAsync()
     {
-        urlHelper.NavigateTo("/preñes/crear");
+        var response = await embarazosManager.GetAsync();
+        if(response.Succeeded)
+        {
+            Produc = response.Items.ToList();
+        }
+    }
+
+    public void Agregar()
+    {
+        urlHelper.NavigateTo("/preñes/crear",false);
+    }
+
+    public void Editar(int Id)
+    {
+        urlHelper.NavigateTo($"/preñes/editar/{Id}",false);
     }
 }

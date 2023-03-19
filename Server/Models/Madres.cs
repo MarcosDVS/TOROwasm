@@ -47,6 +47,6 @@ public class Madres
     }
     public MadreRecord ToRecord()
     {
-        return new MadreRecord(ID, IdMadre, ColorHijo, SexoHijo, FechaNac);
+        return new MadreRecord(ID, IdMadre, IdHijo, ColorHijo, SexoHijo, FechaNac);
     }
 }

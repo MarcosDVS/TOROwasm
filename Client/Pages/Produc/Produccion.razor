@@ -3,24 +3,36 @@
 <h1>Datos de Producción diarios</h1>
 <button @onclick="Agregar" class="btn btn-success">Agregar</button>
 
-        <thead>
-            <tr>
-                <th>Fecha/Produccion</th>
-                <th>Vacas/Producción</th>
-                <th>Litros/Leche</th>
-            </tr>
-        </thead>
-        @foreach (var produc in Produc)
+<table class="table">
+    <thead>
+        <tr>
+            <th>Fecha/Produccion</th>
+            <th>Vacas/Producción</th>
+            <th>Litros/Leche</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if(Produc != null)
         {
-            <tbody>
+            @foreach (var produc in Produc)
+            {
+                
                 <tr>
                     <td>@produc.FechaProd </td>
                     <td>@produc.VacasProd </td>
                     <td>@produc.LitrosLeche </td>
                     <td><span class="btn btn-outline-warning" @onclick="()=>Editar(produc.ID)">Editar</span></td>
                 </tr>
-            </tbody>
+            }
         }
+        else
+        {
+            <p>Cargando...</p>
+        }
+    </tbody>
+</table>
+        
+        
 
 @code 
 {

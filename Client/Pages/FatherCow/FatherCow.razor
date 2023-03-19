@@ -1,42 +1,78 @@
-﻿@page "/father/cow"
+﻿@page "/padre/crear"
+@page "/padre/crear/{Id:int}"
 
-<PageTitle>Father Cow</PageTitle>
+<PageTitle>Mother Cow</PageTitle>
 <h1>Registrar Bovino</h1>
-<hr />
+
+<EditForm Model="@Produc" OnValidSubmit="Send">
+    <h1>@Titulo</h1>
+    <DataAnnotationsValidator/>
+    <ValidationSummary/>
+    <h3>Madre Del Bovino</h3>
+         
+    <div class="form-group">       
+        <label for="txtID">ID de la Padre</label>
+        <InputNumber class="form-control" @bind-Value="Produc.IdPadre" />
+    </div>
+    <div class="form-group">
+        <label for="">ID del hijo</label>
+        <InputNumber class="form-control" @bind-Value="Produc.IdHijo"/>
+    </div>
+    <div class="form-group">
+        <label for="">Color del hijo</label>
+        <InputNumber class="form-control" @bind-Value="Produc.ColorHijo"/>
+    </div>
+    <div class="form-group">
+        <label for="">Sexo del hijo</label>
+        <InputNumber class="form-control" @bind-Value="Produc.SexoHijo"/>
+    </div>
+    <div class="form-group">
+        <label for="">Fecha de nacimiento</label>
+        <InputDate class="form-control" @bind-Value="Produc.FechaNac"/>
+    </div>
+
+    <button type="submit" class="mt-2 btn btn-success">OK</button>
+</EditForm>
 
 <div class="button" style="float: right;">
     <button class="btn btn-danger" @onclick="back">Back</button>
 </div>
 
-<div class="row">
-    <h3>Padre Del Bovino</h3>
-    <div class="col">
-        <label for="txtID">ID del Padre</label>
-        <input type="text" id="txtID" class="form-control" />
-    </div>
-    <div class="col">
-        <label for="txtRaza">Raza</label>
-        <input type="text" id="txtRaza" class="form-control" />
-    </div>
-    <div class="col">
-        <label for="txtColor">Color</label>
-        <input type="text" id="txtColor" class="form-control" />
-    </div>
-</div>
-<div class="row mt-3">
-    <button class="btn btn-success" @onclick="Registrar">
-        <span class="oi oi-plus"></span> Registrar
-    </button>
-</div>
-
 @code
 {
+    [Parameter]
+    public int Id { get; set; } = 0;
+
+    public string Titulo => Id>0? "Editar Producción":"Crear Producción";
+    public PadreUpdateRequest Produc { get; set; } = new PadreUpdateRequest();
+
+    protected override async Task OnInitializedAsync()
+    {
+        if(Id!=0)
+        {
+            var resultado = await padresManager.GetByIdAsync(Id);
+            if(resultado.Succeeded)
+            {
+                Produc.ID = resultado.Data.ID;
+                Produc.IdPadre = resultado.Data.IdPadre;
+                Produc.IdHijo = resultado.Data.IdHijo;
+                Produc.ColorHijo = resultado.Data.ColorHijo;
+                Produc.SexoHijo = resultado.Data.SexoHijo;
+                Produc.FechaNac = resultado.Data.FechaNac;
+
+                StateHasChanged();
+            }
+        }
+    }
+    
+    public async void Send()
+    {
+        var resultado = await padresManager.CreateAsync(Produc);
+
+        if(resultado.Succeeded) urlHelper.NavigateTo("/padre/crear",false);
+    }
     void back()
     {
         urlHelper.NavigateTo("/new/cow");
-    }
-    void Registrar()
-    {
-        urlHelper.NavigateTo("/mother/cow");
     }
 }
