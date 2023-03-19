@@ -1,0 +1,95 @@
+@page "/preñes/crear"
+@page "/preñes/editar"
+
+<div class="button" style="float: right;">
+    <button class="btn btn-secondary" @onclick="back">
+        <span class="oi oi-list-rich"></span> Ver Lista
+    </button>
+</div>
+
+<EditForm Model="@Emba" OnValidSubmit="Send">
+<h1>@Titulo</h1>
+    <DataAnnotationsValidator/>
+    <ValidationSummary/>
+
+    <div class="form-group">       
+        <label for="">ID de la vaca</label>
+        <InputNumber class="form-control" @bind-Value="Emba.IdVaca"/>
+    </div>
+    <div class="form-group">
+        <label for="">Raza de la vaca</label>
+        <InputText class="form-control" @bind-Value="Emba.RazaVaca"/>
+    </div>
+    <div class="form-group">
+        <label for="">ID del Toro</label>
+        <InputNumber class="form-control" @bind-Value="Emba.IdToro"/>
+    </div>
+    <div class="form-group">
+        <label for="">Raza del Toro</label>
+        <InputText class="form-control" @bind-Value="Emba.RazaToro"/>
+    </div>
+    <div class="form-group">
+        <label for="">Metodo de preñes</label>
+        <InputSelect class="form-control" @bind-Value="Emba.MetodoPreñes"> 
+            <option value="">Monta directa</option>
+            <option value="">Inseminación artificial</option>
+            <option value="">Transferencia de embriones</option>
+        </InputSelect> 
+    </div>
+    <div class="form-group">
+        <label for="">Fecha de Preñes</label>
+        <InputDate class="form-control" @bind-Value="Emba.FechaPre"/>
+    </div>
+    <div class="form-group">
+        <label for="">Posible Fecha de Parto</label>
+        <InputDate class="form-control" @bind-Value="Emba.PFP"/>
+    </div>
+    <div class="form-group">
+        <label for="">Observación</label>
+        <InputTextArea class="form-control" @bind-Value="Emba.Observacion"/>
+    </div>
+
+    <button type="submit" class="mt-2 btn btn-success">OK</button>
+</EditForm>
+
+@code
+{
+     [Parameter]
+    public int Id { get; set; } = 0;
+
+    public string Titulo => Id>0? "Editar Embarazo":"Registrar Embarazo";
+    public PreñesUpdateRequest Emba { get; set; } = new PreñesUpdateRequest();
+
+        protected override async Task OnInitializedAsync()
+        {
+            if(Id!=0)
+            {
+                var resultado = await embarazosManager.GetByIdAsync(Id);
+                if(resultado.Succeeded)
+                {
+                    Emba.ID = resultado.Data.ID;
+                    Emba.IdVaca = resultado.Data.IdVaca;
+                    Emba.RazaVaca = resultado.Data.RazaVaca;
+                    Emba.IdToro = resultado.Data.IdToro;
+                    Emba.RazaToro = resultado.Data.RazaToro;
+                    Emba.MetodoPreñes = resultado.Data.MetodoPreñes;
+                    Emba.Observacion = resultado.Data.Observacion;
+                    Emba.FechaPre = resultado.Data.FechaPre;
+                    Emba.PFP = resultado.Data.PFP;
+
+                    StateHasChanged();
+                }
+            }
+        }
+    
+    public async void Send()
+    {
+        var resultado = await embarazosManager.CreateAsync(Emba);
+
+        if(resultado.Succeeded) urlHelper.NavigateTo("/preñes");
+    }
+    void back()
+    {
+        urlHelper.NavigateTo("/preñes");
+    }
+}

@@ -194,43 +194,6 @@
         }
       },
       {
-        "HashCode": -1820989804,
-        "Kind": "Components.Component",
-        "Name": "TORO.Client.Pages.Preñes.PreñesCrear",
-        "AssemblyName": "TORO.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "PreñesCrear"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TORO.Client.Pages.Preñes.PreñesCrear",
-          "Common.TypeNamespace": "TORO.Client.Pages.Preñes",
-          "Common.TypeNameIdentifier": "PreñesCrear"
-        }
-      },
-      {
-        "HashCode": 76452898,
-        "Kind": "Components.Component",
-        "Name": "TORO.Client.Pages.Preñes.PreñesCrear",
-        "AssemblyName": "TORO.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "TORO.Client.Pages.Preñes.PreñesCrear"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TORO.Client.Pages.Preñes.PreñesCrear",
-          "Common.TypeNamespace": "TORO.Client.Pages.Preñes",
-          "Common.TypeNameIdentifier": "PreñesCrear",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": 552322272,
         "Kind": "Components.Component",
         "Name": "TORO.Client.Pages.Preñes.PreñesView",
@@ -268,14 +231,14 @@
         }
       },
       {
-        "HashCode": -2008610064,
+        "HashCode": -1234308282,
         "Kind": "Components.Component",
-        "Name": "TORO.Client.Pages.Produc.AddEditRol",
+        "Name": "TORO.Client.Pages.Preñes.AddEditPre",
         "AssemblyName": "TORO.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "AddEditRol"
+            "TagName": "AddEditPre"
           }
         ],
         "BoundAttributes": [
@@ -291,20 +254,20 @@
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TORO.Client.Pages.Produc.AddEditRol",
-          "Common.TypeNamespace": "TORO.Client.Pages.Produc",
-          "Common.TypeNameIdentifier": "AddEditRol"
+          "Common.TypeName": "TORO.Client.Pages.Preñes.AddEditPre",
+          "Common.TypeNamespace": "TORO.Client.Pages.Preñes",
+          "Common.TypeNameIdentifier": "AddEditPre"
         }
       },
       {
-        "HashCode": 1338654448,
+        "HashCode": -1940270261,
         "Kind": "Components.Component",
-        "Name": "TORO.Client.Pages.Produc.AddEditRol",
+        "Name": "TORO.Client.Pages.Preñes.AddEditPre",
         "AssemblyName": "TORO.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "TORO.Client.Pages.Produc.AddEditRol"
+            "TagName": "TORO.Client.Pages.Preñes.AddEditPre"
           }
         ],
         "BoundAttributes": [
@@ -320,46 +283,46 @@
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TORO.Client.Pages.Produc.AddEditRol",
-          "Common.TypeNamespace": "TORO.Client.Pages.Produc",
-          "Common.TypeNameIdentifier": "AddEditRol",
+          "Common.TypeName": "TORO.Client.Pages.Preñes.AddEditPre",
+          "Common.TypeNamespace": "TORO.Client.Pages.Preñes",
+          "Common.TypeNameIdentifier": "AddEditPre",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": -163058703,
+        "HashCode": 197149146,
         "Kind": "Components.Component",
-        "Name": "TORO.Client.Pages.Produc.Produccion",
+        "Name": "TORO.Client.Pages.UsuariosRoles.Index",
         "AssemblyName": "TORO.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Produccion"
+            "TagName": "Index"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TORO.Client.Pages.Produc.Produccion",
-          "Common.TypeNamespace": "TORO.Client.Pages.Produc",
-          "Common.TypeNameIdentifier": "Produccion"
+          "Common.TypeName": "TORO.Client.Pages.UsuariosRoles.Index",
+          "Common.TypeNamespace": "TORO.Client.Pages.UsuariosRoles",
+          "Common.TypeNameIdentifier": "Index"
         }
       },
       {
-        "HashCode": 1112415665,
+        "HashCode": 623548877,
         "Kind": "Components.Component",
-        "Name": "TORO.Client.Pages.Produc.Produccion",
+        "Name": "TORO.Client.Pages.UsuariosRoles.Index",
         "AssemblyName": "TORO.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "TORO.Client.Pages.Produc.Produccion"
+            "TagName": "TORO.Client.Pages.UsuariosRoles.Index"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TORO.Client.Pages.Produc.Produccion",
-          "Common.TypeNamespace": "TORO.Client.Pages.Produc",
-          "Common.TypeNameIdentifier": "Produccion",
+          "Common.TypeName": "TORO.Client.Pages.UsuariosRoles.Index",
+          "Common.TypeNamespace": "TORO.Client.Pages.UsuariosRoles",
+          "Common.TypeNameIdentifier": "Index",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -423,51 +386,51 @@
         }
       },
       {
-        "HashCode": 197149146,
+        "HashCode": -163058703,
         "Kind": "Components.Component",
-        "Name": "TORO.Client.Pages.UsuariosRoles.Index",
+        "Name": "TORO.Client.Pages.Produc.Produccion",
         "AssemblyName": "TORO.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Index"
+            "TagName": "Produccion"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TORO.Client.Pages.UsuariosRoles.Index",
-          "Common.TypeNamespace": "TORO.Client.Pages.UsuariosRoles",
-          "Common.TypeNameIdentifier": "Index"
+          "Common.TypeName": "TORO.Client.Pages.Produc.Produccion",
+          "Common.TypeNamespace": "TORO.Client.Pages.Produc",
+          "Common.TypeNameIdentifier": "Produccion"
         }
       },
       {
-        "HashCode": 623548877,
+        "HashCode": 1112415665,
         "Kind": "Components.Component",
-        "Name": "TORO.Client.Pages.UsuariosRoles.Index",
+        "Name": "TORO.Client.Pages.Produc.Produccion",
         "AssemblyName": "TORO.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "TORO.Client.Pages.UsuariosRoles.Index"
+            "TagName": "TORO.Client.Pages.Produc.Produccion"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TORO.Client.Pages.UsuariosRoles.Index",
-          "Common.TypeNamespace": "TORO.Client.Pages.UsuariosRoles",
-          "Common.TypeNameIdentifier": "Index",
+          "Common.TypeName": "TORO.Client.Pages.Produc.Produccion",
+          "Common.TypeNamespace": "TORO.Client.Pages.Produc",
+          "Common.TypeNameIdentifier": "Produccion",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": 1934791539,
+        "HashCode": 1830161966,
         "Kind": "Components.Component",
-        "Name": "TORO.Client.Pages.Produccion.AddEditRol",
+        "Name": "TORO.Client.Pages.Produc.AddEditProduc",
         "AssemblyName": "TORO.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "AddEditRol"
+            "TagName": "AddEditProduc"
           }
         ],
         "BoundAttributes": [
@@ -483,20 +446,20 @@
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TORO.Client.Pages.Produccion.AddEditRol",
-          "Common.TypeNamespace": "TORO.Client.Pages.Produccion",
-          "Common.TypeNameIdentifier": "AddEditRol"
+          "Common.TypeName": "TORO.Client.Pages.Produc.AddEditProduc",
+          "Common.TypeNamespace": "TORO.Client.Pages.Produc",
+          "Common.TypeNameIdentifier": "AddEditProduc"
         }
       },
       {
-        "HashCode": -1489256447,
+        "HashCode": 1929207664,
         "Kind": "Components.Component",
-        "Name": "TORO.Client.Pages.Produccion.AddEditRol",
+        "Name": "TORO.Client.Pages.Produc.AddEditProduc",
         "AssemblyName": "TORO.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "TORO.Client.Pages.Produccion.AddEditRol"
+            "TagName": "TORO.Client.Pages.Produc.AddEditProduc"
           }
         ],
         "BoundAttributes": [
@@ -512,46 +475,9 @@
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TORO.Client.Pages.Produccion.AddEditRol",
-          "Common.TypeNamespace": "TORO.Client.Pages.Produccion",
-          "Common.TypeNameIdentifier": "AddEditRol",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1931566759,
-        "Kind": "Components.Component",
-        "Name": "TORO.Client.Pages.Produccion.Index",
-        "AssemblyName": "TORO.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TORO.Client.Pages.Produccion.Index",
-          "Common.TypeNamespace": "TORO.Client.Pages.Produccion",
-          "Common.TypeNameIdentifier": "Index"
-        }
-      },
-      {
-        "HashCode": 1954520300,
-        "Kind": "Components.Component",
-        "Name": "TORO.Client.Pages.Produccion.Index",
-        "AssemblyName": "TORO.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "TORO.Client.Pages.Produccion.Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TORO.Client.Pages.Produccion.Index",
-          "Common.TypeNamespace": "TORO.Client.Pages.Produccion",
-          "Common.TypeNameIdentifier": "Index",
+          "Common.TypeName": "TORO.Client.Pages.Produc.AddEditProduc",
+          "Common.TypeNamespace": "TORO.Client.Pages.Produc",
+          "Common.TypeNameIdentifier": "AddEditProduc",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -18913,14 +18839,19 @@
       "FileKind": "componentImport"
     },
     {
+      "FilePath": "c:\\2020-0288\\TORO\\Client\\Pages\\Produc\\AddEditProduc.razor",
+      "TargetPath": "Pages\\Produc\\AddEditProduc.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\2020-0288\\TORO\\Client\\Pages\\Preñes\\AddEditPre.razor",
+      "TargetPath": "Pages\\Preñes\\AddEditPre.razor",
+      "FileKind": "component"
+    },
+    {
       "FilePath": "c:\\2020-0288\\TORO\\Client\\Pages\\Preñes\\_Imports.razor",
       "TargetPath": "Pages\\Preñes\\_Imports.razor",
       "FileKind": "componentImport"
-    },
-    {
-      "FilePath": "c:\\2020-0288\\TORO\\Client\\Pages\\Preñes\\PreñesCrear.razor",
-      "TargetPath": "Pages\\Preñes\\PreñesCrear.razor",
-      "FileKind": "component"
     },
     {
       "FilePath": "c:\\2020-0288\\TORO\\Client\\Pages\\FatherCow\\_Imports.razor",
@@ -18958,11 +18889,6 @@
       "FileKind": "componentImport"
     },
     {
-      "FilePath": "c:\\2020-0288\\TORO\\Client\\Pages\\Produc\\AddEditRol.razor",
-      "TargetPath": "Pages\\Produc\\AddEditRol.razor",
-      "FileKind": "component"
-    },
-    {
       "FilePath": "c:\\2020-0288\\TORO\\Client\\Pages\\UsuariosRoles\\Index.razor",
       "TargetPath": "Pages\\UsuariosRoles\\Index.razor",
       "FileKind": "component"
@@ -18970,11 +18896,6 @@
     {
       "FilePath": "c:\\2020-0288\\TORO\\Client\\Pages\\FatherCow\\FatherCow.razor",
       "TargetPath": "Pages\\FatherCow\\FatherCow.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\2020-0288\\TORO\\Client\\Pages\\Produccion\\AddEditRol.razor",
-      "TargetPath": "Pages\\Produccion\\AddEditRol.razor",
       "FileKind": "component"
     },
     {
@@ -18986,11 +18907,6 @@
       "FilePath": "c:\\2020-0288\\TORO\\Client\\_Imports.razor",
       "TargetPath": "_Imports.razor",
       "FileKind": "componentImport"
-    },
-    {
-      "FilePath": "c:\\2020-0288\\TORO\\Client\\Pages\\Produccion\\Index.razor",
-      "TargetPath": "Pages\\Produccion\\Index.razor",
-      "FileKind": "component"
     },
     {
       "FilePath": "c:\\2020-0288\\TORO\\Client\\Shared\\NavMenu.razor",
