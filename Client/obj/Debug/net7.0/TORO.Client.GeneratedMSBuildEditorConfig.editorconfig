@@ -44,6 +44,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/2020-0288/TORO/Client/Pages/MenuDisplay.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVudURpc3BsYXkucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/2020-0288/TORO/Client/Pages/MotherCow/MotherCow.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW90aGVyQ293XE1vdGhlckNvdy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 

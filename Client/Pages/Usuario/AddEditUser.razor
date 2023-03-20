@@ -1,6 +1,8 @@
 @page "/user/crear"
 @page "/user/editar/{Id:int}"
 
+<MenuDisplay />
+
 <EditForm Model="@User" OnValidSubmit="Send">
 <h1>@Titulo</h1>
     <DataAnnotationsValidator/>

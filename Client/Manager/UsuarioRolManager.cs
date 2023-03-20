@@ -1,18 +1,18 @@
 using TORO.Shared.Wrapper;
+using TORO.Shared.Requests;
 using TORO.Shared.Records;
 using TORO.Shared.Routes;
 using TORO.Client.Extensions;
 using System.Net.Http.Json;
-using TORO.Shared.Requests;
+
 
 namespace TORO.Client.Managers;
 
 public interface IUsuarioRolManager
 {
     Task<ResultList<UsuarioRolRecord>> GetAsync();
-    Task<Result<UsuarioRolRecord>> GetByIdAsync(int id);
     Task<Result<int>> CreateAsync(UsuarioRolCreateRequest request);
-    
+    Task<Result<UsuarioRolRecord>> GetByIdAsync(int Id);
 }
 
 public class UsuarioRolManager : IUsuarioRolManager
@@ -37,16 +37,14 @@ public class UsuarioRolManager : IUsuarioRolManager
             return ResultList<UsuarioRolRecord>.Fail(e.Message);
         }
     }
-
-    public async Task<Result<int>> CreateAsync( UsuarioRolCreateRequest request)
+    public async Task<Result<int>> CreateAsync(UsuarioRolCreateRequest request)
     {
-        var response = await httpClient.PostAsJsonAsync(UsuarioRolRouteManager.BASE,request);
-        return await response.ToResult<int>();
+       var response = await httpClient.PostAsJsonAsync(UsuarioRolRouteManager.BASE,request);
+       return await response.ToResult<int>();
     }
-     public async Task<Result<UsuarioRolRecord>> GetByIdAsync(int Id)
+    public async Task<Result<UsuarioRolRecord>> GetByIdAsync(int Id)
     {
-        var response = await httpClient.GetAsync(UsuarioRolRouteManager.BuilRoute(Id));
-        return await response.ToResult<UsuarioRolRecord>();
+       var response = await httpClient.GetAsync(UsuarioRolRouteManager.BuildRoute(Id));
+       return await response.ToResult<UsuarioRolRecord>();
     }
-
 }
