@@ -1,0 +1,59 @@
+@page "/user"
+
+<h1>Usuarios</h1>
+<button class="btn btn-success" @onclick="Agregar">
+    <span class="oi oi-plus"></span> Agregar
+</button>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Correo</th>
+            <th>Roles</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if(Users != null)
+        {
+            @foreach (var user in Users)
+            {
+            <tr>
+                <td>@user.Id </td>
+                <td>@user.Name </td>
+                <td>@user.Nickname </td>
+                <td>@user.UsuarioRol </td>
+                <td> <span class="btn btn-outline-warning" @onclick="()=>Editar(user.Id)">Editar</span></td>
+            </tr>
+            }
+        }
+        else
+        {
+            <p>Cargando...</p>
+        }
+    </tbody>
+</table>
+
+@code
+{
+    public List<UsuarioRecord>? Users { get; set; }
+    protected override async Task OnInitializedAsync()
+    {
+        var response = await userManager.GetAsync();
+        if(response.Succeeded)
+        {
+            Users = response.Items.ToList();
+        }
+    }
+
+    public void Agregar()
+    {
+        urlHelper.NavigateTo("/user/crear",false);
+    }
+
+    public void Editar(int Id)
+    {
+        urlHelper.NavigateTo($"/user/editar/{Id}",false);
+    }
+}

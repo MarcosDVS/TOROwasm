@@ -14,10 +14,6 @@
     <DataAnnotationsValidator/>
     <ValidationSummary/>
 
-    <div class="form-group">       
-        <label for="txtID">ID/Bovino</label>
-        <InputNumber class="form-control" @bind-Value="Produc.IdBovino" />
-    </div>
     <div class="form-group">
         <label for="">Raza</label>
         <InputText class="form-control" @bind-Value="Produc.Raza"/>
@@ -28,7 +24,12 @@
     </div>
     <div class="form-group">
         <label for="">Sexo</label>
-        <InputText class="form-control" @bind-Value="Produc.Sexo"/>
+        <InputSelect class="form-control" @bind-Value="Produc.Sexo">
+            @foreach (var opcion in Sexo)
+            {
+                <option value="@opcion">@opcion</option>
+            }
+        </InputSelect> 
     </div>
     <div class="form-group">
         <label for="">Id/Padre</label>
@@ -52,12 +53,11 @@
     </div>
     <div class="form-group">
         <label for="">Observación</label>
-        <InputSelect class="form-control" @bind-Value="Produc.Observacion"> 
-            <option value="">Condiciones optimas</option>
-            <option value="">Delgado</option>
-            <option value="">Enfermo</option>
-            <option value="">Herido</option>
-            <option value="">Cojo</option>
+        <InputSelect class="form-control" @bind-Value="Produc.Observacion">
+            @foreach (var opcion in Observ)
+            {
+                <option value="@opcion">@opcion</option>
+            }
         </InputSelect> 
     </div>
 
@@ -71,6 +71,19 @@
 
     public string Titulo => Id>0? "Editar Bovino":"Registrar Bovino";
     public BovinoUpdateRequest Produc { get; set; } = new BovinoUpdateRequest();
+
+    public List<string> Observ = new List<string> 
+    { 
+        "Condiciones optimas 1", 
+        "Delgado 2", 
+        "Enfermo 3", 
+        "Herido 4" 
+    };
+    public List<string> Sexo = new List<string> 
+    { 
+        "Macho 1", 
+        "Hembra 2"
+    };
 
     protected override async Task OnInitializedAsync()
     {

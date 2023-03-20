@@ -88,6 +88,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXN1YXJpb3NSb2xlc1xfSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/2020-0288/TORO/Client/Pages/Usuario/AddEditUser.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXN1YXJpb1xBZGRFZGl0VXNlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/2020-0288/TORO/Client/Pages/Usuario/User.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXN1YXJpb1xVc2VyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/2020-0288/TORO/Client/Pages/Usuario/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXN1YXJpb1xfSW1wb3J0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/2020-0288/TORO/Client/Shared/LoginDisplay.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExvZ2luRGlzcGxheS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
