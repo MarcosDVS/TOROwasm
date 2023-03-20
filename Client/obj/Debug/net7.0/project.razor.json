@@ -824,46 +824,9 @@
         }
       },
       {
-        "HashCode": 727643097,
+        "HashCode": -304691682,
         "Kind": "Components.Component",
-        "Name": "TORO.Client.Pages.MenuDisplay",
-        "AssemblyName": "TORO.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "MenuDisplay"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TORO.Client.Pages.MenuDisplay",
-          "Common.TypeNamespace": "TORO.Client.Pages",
-          "Common.TypeNameIdentifier": "MenuDisplay"
-        }
-      },
-      {
-        "HashCode": 453075510,
-        "Kind": "Components.Component",
-        "Name": "TORO.Client.Pages.MenuDisplay",
-        "AssemblyName": "TORO.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "TORO.Client.Pages.MenuDisplay"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TORO.Client.Pages.MenuDisplay",
-          "Common.TypeNamespace": "TORO.Client.Pages",
-          "Common.TypeNameIdentifier": "MenuDisplay",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1213839442,
-        "Kind": "Components.Component",
-        "Name": "TORO.Client.Pages.Index",
+        "Name": "TORO.Client.Pages.UsuariosRoles.Index",
         "AssemblyName": "TORO.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
@@ -873,26 +836,26 @@
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TORO.Client.Pages.Index",
-          "Common.TypeNamespace": "TORO.Client.Pages",
+          "Common.TypeName": "TORO.Client.Pages.UsuariosRoles.Index",
+          "Common.TypeNamespace": "TORO.Client.Pages.UsuariosRoles",
           "Common.TypeNameIdentifier": "Index"
         }
       },
       {
-        "HashCode": 754780045,
+        "HashCode": 1115791475,
         "Kind": "Components.Component",
-        "Name": "TORO.Client.Pages.Index",
+        "Name": "TORO.Client.Pages.UsuariosRoles.Index",
         "AssemblyName": "TORO.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "TORO.Client.Pages.Index"
+            "TagName": "TORO.Client.Pages.UsuariosRoles.Index"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TORO.Client.Pages.Index",
-          "Common.TypeNamespace": "TORO.Client.Pages",
+          "Common.TypeName": "TORO.Client.Pages.UsuariosRoles.Index",
+          "Common.TypeNamespace": "TORO.Client.Pages.UsuariosRoles",
           "Common.TypeNameIdentifier": "Index",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
@@ -957,9 +920,9 @@
         }
       },
       {
-        "HashCode": -304691682,
+        "HashCode": 1213839442,
         "Kind": "Components.Component",
-        "Name": "TORO.Client.Pages.UsuariosRoles.Index",
+        "Name": "TORO.Client.Pages.Index",
         "AssemblyName": "TORO.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
@@ -969,27 +932,64 @@
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TORO.Client.Pages.UsuariosRoles.Index",
-          "Common.TypeNamespace": "TORO.Client.Pages.UsuariosRoles",
+          "Common.TypeName": "TORO.Client.Pages.Index",
+          "Common.TypeNamespace": "TORO.Client.Pages",
           "Common.TypeNameIdentifier": "Index"
         }
       },
       {
-        "HashCode": 1115791475,
+        "HashCode": 754780045,
         "Kind": "Components.Component",
-        "Name": "TORO.Client.Pages.UsuariosRoles.Index",
+        "Name": "TORO.Client.Pages.Index",
         "AssemblyName": "TORO.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "TORO.Client.Pages.UsuariosRoles.Index"
+            "TagName": "TORO.Client.Pages.Index"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TORO.Client.Pages.UsuariosRoles.Index",
-          "Common.TypeNamespace": "TORO.Client.Pages.UsuariosRoles",
+          "Common.TypeName": "TORO.Client.Pages.Index",
+          "Common.TypeNamespace": "TORO.Client.Pages",
           "Common.TypeNameIdentifier": "Index",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 727643097,
+        "Kind": "Components.Component",
+        "Name": "TORO.Client.Pages.MenuDisplay",
+        "AssemblyName": "TORO.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "MenuDisplay"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "TORO.Client.Pages.MenuDisplay",
+          "Common.TypeNamespace": "TORO.Client.Pages",
+          "Common.TypeNameIdentifier": "MenuDisplay"
+        }
+      },
+      {
+        "HashCode": 453075510,
+        "Kind": "Components.Component",
+        "Name": "TORO.Client.Pages.MenuDisplay",
+        "AssemblyName": "TORO.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "TORO.Client.Pages.MenuDisplay"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "TORO.Client.Pages.MenuDisplay",
+          "Common.TypeNamespace": "TORO.Client.Pages",
+          "Common.TypeNameIdentifier": "MenuDisplay",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
