@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using TORO.Server.Models;
 
@@ -9,43 +5,46 @@ namespace TORO.Server.Context;
 
 public interface ITORODbContext
 {
-    DbSet<Usuarios> Users { get; set; }
+
     DbSet<UsuarioRol> UsuariosRoles { get; set; }
+    DbSet<Usuarios> Users { get; set; }  
     DbSet<Bovinos> bovinos { get; set; }
     DbSet<Padres> Father { get; set; }
     DbSet<Madres> Mother { get; set; }
     DbSet<EmbVaca> Preñeses { get; set; }
     DbSet<ProdLeche> Producciones { get; set; }
 
+
     Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
 }
 
-internal class TORODbContext : DbContext, ITORODbContext
+public class TORODbContext : DbContext, ITORODbContext
 {
-    //Constructor de la clase
-    protected readonly IConfiguration _configuration;
-    public TORODbContext(IConfiguration configuration)
+    private readonly IConfiguration config;
+
+    public TORODbContext(IConfiguration _config)
     {
-        _configuration = configuration;
-    }
-    
-    protected override void OnConfiguring(DbContextOptionsBuilder options)
-    {
-        options.UseSqlServer(_configuration.GetConnectionString("TORO"));
+        config = _config;
     }
 
-    #region Tablas de la BD.
-    public DbSet<Usuarios> Users { get; set; } = null!;
-    public DbSet<UsuarioRol> UsuariosRoles { get; set; } = null!;
-    public DbSet<Bovinos> bovinos { get; set; } = null!;
-    public DbSet<Padres> Father { get; set; } = null!;
-    public DbSet<Madres> Mother { get; set; } = null!;
-    public DbSet<EmbVaca> Preñeses { get; set; } = null!;
-    public DbSet<ProdLeche> Producciones { get; set; } = null!;
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    {
+        optionsBuilder.UseSqlServer(config.GetConnectionString("Proyecto"));
+    }
 
-    #endregion
     public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
     {
         return base.SaveChangesAsync(cancellationToken);
     }
+
+    #region Tablas de mi base de datos
+    public DbSet<UsuarioRol> UsuariosRoles { set; get; } = null!;
+    public DbSet<Usuarios> Users { set; get; } = null!;
+    public DbSet<Bovinos> bovinos { set; get; } = null!;
+    public DbSet<Padres> Father { set; get; } = null!;
+    public DbSet<Madres> Mother { set; get; } = null!;
+    public DbSet<EmbVaca> Preñeses { set; get; } = null!;
+    public DbSet<ProdLeche> Producciones { set; get; } = null!;
+    
+    #endregion
 }
