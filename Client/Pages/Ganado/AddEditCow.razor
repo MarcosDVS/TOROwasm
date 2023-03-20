@@ -1,0 +1,106 @@
+﻿@page "/bovino/crear"
+@page "/bovino/crear/{Id:int}"
+
+<PageTitle>Father Cow</PageTitle>
+
+<div class="button" style="float: right;">
+    <button class="btn btn-secondary" @onclick="back">
+        <span class="oi oi-list-rich"></span> Ver Lista
+    </button>
+</div>
+
+<EditForm Model="@Produc" OnValidSubmit="Send">
+    <h1>@Titulo</h1>
+    <DataAnnotationsValidator/>
+    <ValidationSummary/>
+
+    <div class="form-group">       
+        <label for="txtID">ID/Bovino</label>
+        <InputNumber class="form-control" @bind-Value="Produc.IdBovino" />
+    </div>
+    <div class="form-group">
+        <label for="">Raza</label>
+        <InputText class="form-control" @bind-Value="Produc.Raza"/>
+    </div>
+    <div class="form-group">
+        <label for="">Color</label>
+        <InputText class="form-control" @bind-Value="Produc.Color"/>
+    </div>
+    <div class="form-group">
+        <label for="">Sexo</label>
+        <InputText class="form-control" @bind-Value="Produc.Sexo"/>
+    </div>
+    <div class="form-group">
+        <label for="">Id/Padre</label>
+        <InputNumber class="form-control" @bind-Value="Produc.IdPadre"/>
+    </div>
+    <div class="form-group">
+        <label for="">Id/Madre</label>
+        <InputNumber class="form-control" @bind-Value="Produc.IdMadre"/>
+    </div>
+    <div class="form-group">
+        <label for="">Fecha/Nacimiento</label>
+        <InputDate class="form-control" @bind-Value="Produc.FechaNac"/>
+    </div>
+    <div class="form-group">
+        <label for="">Peso/Nacer</label>
+        <InputNumber class="form-control" @bind-Value="Produc.PesoNacer"/>
+    </div>
+    <div class="form-group">
+        <label for="">Costo</label>
+        <InputNumber class="form-control" @bind-Value="Produc.Costo"/>
+    </div>
+    <div class="form-group">
+        <label for="">Observación</label>
+        <InputSelect class="form-control" @bind-Value="Produc.Observacion"> 
+            <option value="">Condiciones optimas</option>
+            <option value="">Delgado</option>
+            <option value="">Enfermo</option>
+            <option value="">Herido</option>
+            <option value="">Cojo</option>
+        </InputSelect> 
+    </div>
+
+    <button type="submit" class="mt-2 btn btn-success">OK</button>
+</EditForm>
+
+@code
+{
+    [Parameter]
+    public int Id { get; set; } = 0;
+
+    public string Titulo => Id>0? "Editar Bovino":"Registrar Bovino";
+    public BovinoUpdateRequest Produc { get; set; } = new BovinoUpdateRequest();
+
+    protected override async Task OnInitializedAsync()
+    {
+        if(Id!=0)
+        {
+            var resultado = await bovinosManager.GetByIdAsync(Id);
+            if(resultado.Succeeded)
+            {
+                Produc.IdBovino = resultado.Data.IdBovino;
+                Produc.Raza = resultado.Data.Raza;
+                Produc.Color = resultado.Data.Color;
+                Produc.Sexo = resultado.Data.Sexo;
+                Produc.FechaNac = resultado.Data.FechaNac;
+                Produc.PesoNacer = resultado.Data.PesoNacer;
+                Produc.Costo = resultado.Data.Costo;
+                Produc.Observacion = resultado.Data.Observacion;
+
+                StateHasChanged();
+            }
+        }
+    }
+    
+    public async void Send()
+    {
+        var resultado = await bovinosManager.CreateAsync(Produc);
+
+        if(resultado.Succeeded) urlHelper.NavigateTo("/padre/crear",false);
+    }
+    void back()
+    {
+        urlHelper.NavigateTo("/ganado");
+    }
+}

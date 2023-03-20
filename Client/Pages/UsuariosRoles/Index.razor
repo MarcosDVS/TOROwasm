@@ -5,19 +5,31 @@
     <span class="oi oi-plus"></span> Agregar
 </button>
 
-@if(Roles != null)
-{
-    <ul>
-        @foreach (var rol in Roles)
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if(Roles != null)
         {
-            <li>@rol.Nombre <span class="btn btn-outline-warning" @onclick="()=>Editar(rol.Id)">Editar</span></li>
+            @foreach (var rol in Roles)
+            {
+            <tr>
+                <td>@rol.Id </td>
+                <td>@rol.Nombre </td>
+                <td> <span class="btn btn-outline-warning" @onclick="()=>Editar(rol.Id)">Editar</span></td>
+            </tr>
+            }
         }
-    </ul>
-}
-else
-{
-    <p>Cargando...</p>
-}
+        else
+        {
+            <p>Cargando...</p>
+        }
+    </tbody>
+</table>
 
 @code
 {

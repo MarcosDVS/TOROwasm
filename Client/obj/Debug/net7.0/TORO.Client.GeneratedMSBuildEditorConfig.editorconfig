@@ -28,12 +28,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmF0aGVyQ293XF9JbXBvcnRzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/2020-0288/TORO/Client/Pages/Ganado/GanadoView.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2FuYWRvXEdhbmFkb1ZpZXcucmF6b3I=
+[C:/2020-0288/TORO/Client/Pages/Ganado/AddEditCow.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2FuYWRvXEFkZEVkaXRDb3cucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/2020-0288/TORO/Client/Pages/Ganado/NewCow.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2FuYWRvXE5ld0Nvdy5yYXpvcg==
+[C:/2020-0288/TORO/Client/Pages/Ganado/GanadoView.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2FuYWRvXEdhbmFkb1ZpZXcucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/2020-0288/TORO/Client/Pages/Ganado/_Imports.razor]

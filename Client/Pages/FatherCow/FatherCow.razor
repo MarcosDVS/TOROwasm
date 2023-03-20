@@ -1,8 +1,7 @@
 ﻿@page "/padre/crear"
 @page "/padre/crear/{Id:int}"
 
-<PageTitle>Mother Cow</PageTitle>
-<h1>Registrar Bovino</h1>
+<PageTitle>Father Cow</PageTitle>
 
 <EditForm Model="@Produc" OnValidSubmit="Send">
     <h1>@Titulo</h1>
@@ -24,7 +23,7 @@
     </div>
     <div class="form-group">
         <label for="">Sexo del hijo</label>
-        <InputNumber class="form-control" @bind-Value="Produc.SexoHijo"/>
+        <InputText class="form-control" @bind-Value="Produc.SexoHijo"/>
     </div>
     <div class="form-group">
         <label for="">Fecha de nacimiento</label>
@@ -43,7 +42,7 @@
     [Parameter]
     public int Id { get; set; } = 0;
 
-    public string Titulo => Id>0? "Editar Producción":"Crear Producción";
+    public string Titulo => Id>0? "Editar Padre":"Registrar Padre";
     public PadreUpdateRequest Produc { get; set; } = new PadreUpdateRequest();
 
     protected override async Task OnInitializedAsync()

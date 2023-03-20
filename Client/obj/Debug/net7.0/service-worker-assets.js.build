@@ -897,19 +897,19 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-GmzFk2SUBAv4uy63A6CDxTRjJZj8SZdO5GnqiWPXZF0=",
+      "hash": "sha256-bjGwo9XottyreRK7qpKT+tj0wtcA4CYdM3Wl8zDoaIM=",
       "url": "_framework\/TORO.Shared.dll"
     },
     {
-      "hash": "sha256-97EUQKGz5yyYeXNCDLRp3Gx7iOrgIQ9luBmBT4paa+0=",
+      "hash": "sha256-P2BHIZ6I8bv52Y41M84I11rmvOE4rwZl\/ogGszoBVGQ=",
       "url": "_framework\/TORO.Shared.pdb"
     },
     {
-      "hash": "sha256-qZ0LdNMBBMPFZcFBD8F2kPoVZGW6b440gqeCnUgIUnM=",
+      "hash": "sha256-eueIeHpG+tlBstLOXelGAIpuPSGsmAoSzH2GOydZnUY=",
       "url": "_framework\/TORO.Client.dll"
     },
     {
-      "hash": "sha256-9K0J3gq64Y9RVoJHlB7wsl4HTVSvLFSD1H5NZAPizVo=",
+      "hash": "sha256-KJXAOonJ3cD4D04AIlIHUdPfN1Hya9UwgsIJXEfjt8E=",
       "url": "_framework\/TORO.Client.pdb"
     },
     {
@@ -917,7 +917,7 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-SlrNEvlK+raEbb\/3wSajD9r0BEC4tVNdGMylpF5cnXw=",
+      "hash": "sha256-9kYSqE3jMniz8zqS8QokfwKtbtg7dbUdBDr0AX6QiIo=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -929,5 +929,5 @@
       "url": "_content\/Microsoft.Authentication.WebAssembly.Msal\/AuthenticationService.js"
     }
   ],
-  "version": "GWoVDNBy"
+  "version": "4K+EN\/xT"
 };
