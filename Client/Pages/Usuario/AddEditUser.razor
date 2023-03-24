@@ -1,5 +1,5 @@
-@page "/user/crear"
-@page "/user/editar/{Id:int}"
+@page "/users/crear"
+@page "/users/editar/{Id:int}"
 
 <MenuDisplay />
 
@@ -57,6 +57,6 @@
     {
         var resultado = await userManager.CreateAsync(User);
 
-        if(resultado.Succeeded) urlHelper.NavigateTo("/user");
+        if(resultado.Succeeded) urlHelper.NavigateTo("/users");
     }
 }

@@ -1,5 +1,5 @@
-@page "/produccion/crear"
-@page "/produccion/editar/{Id:int}"
+@page "/producciones/crear"
+@page "/producciones/editar/{Id:int}"
 
 <MenuDisplay />
 
@@ -53,7 +53,7 @@
     {
         var resultado = await produccionesManager.CreateAsync(Produc);
 
-        if(resultado.Succeeded) urlHelper.NavigateTo("/produccion");
+        if(resultado.Succeeded) urlHelper.NavigateTo("/producciones");
     }
 }
 

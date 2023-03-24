@@ -1,4 +1,4 @@
-﻿@page "/bovino"
+﻿@page "/bovinos"
 
 <PageTitle>Ganado</PageTitle>
 
@@ -63,11 +63,11 @@
 
     public void Agregar()
     {
-        urlHelper.NavigateTo("/bovino/crear",false);
+        urlHelper.NavigateTo("/bovinos/crear",false);
     }
 
     public void Editar(int Id)
     {
-        urlHelper.NavigateTo($"/bovino/editar/{Id}",false);
+        urlHelper.NavigateTo($"/bovinos/editar/{Id}",false);
     }
 }

@@ -1,5 +1,5 @@
-﻿@page "/madre/crear"
-@page "/madre/crear/{Id:int}"
+﻿@page "/madres/crear"
+@page "/madres/crear/{Id:int}"
 
 <PageTitle>Mother Cow</PageTitle>
 
@@ -70,11 +70,11 @@
     {
         var resultado = await madresManager.CreateAsync(Produc);
 
-        if(resultado.Succeeded) urlHelper.NavigateTo("/bovino");
+        if(resultado.Succeeded) urlHelper.NavigateTo("/bovinos");
     }
 
     void back()
     {
-        urlHelper.NavigateTo("/father/cow");
+        urlHelper.NavigateTo("/padres/crear");
     }
 }

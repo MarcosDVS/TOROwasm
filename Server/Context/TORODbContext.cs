@@ -7,10 +7,10 @@ public interface ITORODbContext
 {
 
     DbSet<UsuarioRol> UsuariosRoles { get; set; }
-    DbSet<Usuarios> Users { get; set; }  
-    DbSet<Bovinos> bovinos { get; set; }
-    DbSet<Padres> Father { get; set; }
-    DbSet<Madres> Mother { get; set; }
+    DbSet<Usuario> Usuarios { get; set; }  
+    DbSet<Bovino> bovinos { get; set; }
+    DbSet<Padre> Father { get; set; }
+    DbSet<Madre> Mother { get; set; }
     DbSet<EmbVaca> Preñeses { get; set; }
     DbSet<ProdLeche> Producciones { get; set; }
 
@@ -29,7 +29,7 @@ public class TORODbContext : DbContext, ITORODbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlServer(config.GetConnectionString("Proyecto"));
+        optionsBuilder.UseSqlServer(config.GetConnectionString("TORO"));
     }
 
     public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
@@ -39,10 +39,10 @@ public class TORODbContext : DbContext, ITORODbContext
 
     #region Tablas de mi base de datos
     public DbSet<UsuarioRol> UsuariosRoles { set; get; } = null!;
-    public DbSet<Usuarios> Users { set; get; } = null!;
-    public DbSet<Bovinos> bovinos { set; get; } = null!;
-    public DbSet<Padres> Father { set; get; } = null!;
-    public DbSet<Madres> Mother { set; get; } = null!;
+    public DbSet<Usuario> Usuarios { set; get; } = null!;
+    public DbSet<Bovino> bovinos { set; get; } = null!;
+    public DbSet<Padre> Father { set; get; } = null!;
+    public DbSet<Madre> Mother { set; get; } = null!;
     public DbSet<EmbVaca> Preñeses { set; get; } = null!;
     public DbSet<ProdLeche> Producciones { set; get; } = null!;
     

@@ -1,5 +1,5 @@
-﻿@page "/bovino/crear"
-@page "/bovino/crear/{Id:int}"
+﻿@page "/bovinos/crear"
+@page "/bovinos/crear/{Id:int}"
 
 <PageTitle>Father Cow</PageTitle>
 
@@ -112,10 +112,10 @@
     {
         var resultado = await bovinosManager.CreateAsync(Produc);
 
-        if(resultado.Succeeded) urlHelper.NavigateTo("/padre/crear",false);
+        if(resultado.Succeeded) urlHelper.NavigateTo("/padres/crear",false);
     }
     void back()
     {
-        urlHelper.NavigateTo("/ganado");
+        urlHelper.NavigateTo("/bovinos",false);
     }
 }

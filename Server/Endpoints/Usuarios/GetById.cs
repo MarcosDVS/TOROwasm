@@ -25,7 +25,7 @@ public class GetById : EndpointBaseAsync.WithRequest<Request>.WithActionResult<R
     {
         try
         {
-            var rol = await dbContext.Users
+            var rol = await dbContext.Usuarios
             .Where(r=>r.Id == request.Id)
             .Select(rol=>rol.ToRecord())
             .FirstOrDefaultAsync(cancellationToken);

@@ -1,4 +1,4 @@
-@page "/produccion"
+@page "/producciones"
 
 <MenuDisplay />
 
@@ -52,11 +52,11 @@
 
     public void Agregar()
     {
-        urlHelper.NavigateTo("/produccion/crear",false);
+        urlHelper.NavigateTo("/producciones/crear",false);
     }
 
     public void Editar(int Id)
     {
-        urlHelper.NavigateTo($"/produccion/editar/{Id}",false);
+        urlHelper.NavigateTo($"/producciones/editar/{Id}",false);
     }    
 }

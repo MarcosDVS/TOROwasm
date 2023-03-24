@@ -6,30 +6,13 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace TORO.Server.Migrations
 {
     /// <inheritdoc />
-    public partial class AddNewModels : Migration
+    public partial class InitialCreate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Madres",
-                columns: table => new
-                {
-                    ID = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    IdMadre = table.Column<int>(type: "int", nullable: false),
-                    IdHijo = table.Column<int>(type: "int", nullable: false),
-                    ColorHijo = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    SexoHijo = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    FechaNac = table.Column<DateTime>(type: "datetime2", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Madres", x => x.ID);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Padres",
+                name: "Father",
                 columns: table => new
                 {
                     ID = table.Column<int>(type: "int", nullable: false)
@@ -42,7 +25,24 @@ namespace TORO.Server.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Padres", x => x.ID);
+                    table.PrimaryKey("PK_Father", x => x.ID);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Mother",
+                columns: table => new
+                {
+                    ID = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    IdMadre = table.Column<int>(type: "int", nullable: false),
+                    IdHijo = table.Column<int>(type: "int", nullable: false),
+                    ColorHijo = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    SexoHijo = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    FechaNac = table.Column<DateTime>(type: "datetime2", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Mother", x => x.ID);
                 });
 
             migrationBuilder.CreateTable(
@@ -81,7 +81,23 @@ namespace TORO.Server.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Bovinos",
+                name: "UsuariosRoles",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Nombre = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    PermisoParaCrear = table.Column<bool>(type: "bit", nullable: false),
+                    PermisoParaEditar = table.Column<bool>(type: "bit", nullable: false),
+                    PermisoParaEliminar = table.Column<bool>(type: "bit", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_UsuariosRoles", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "bovinos",
                 columns: table => new
                 {
                     IdBovino = table.Column<int>(type: "int", nullable: false)
@@ -90,47 +106,74 @@ namespace TORO.Server.Migrations
                     Color = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Sexo = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     IdPadre = table.Column<int>(type: "int", nullable: true),
-                    PadresID = table.Column<int>(type: "int", nullable: false),
                     IdMadre = table.Column<int>(type: "int", nullable: true),
-                    MadresID = table.Column<int>(type: "int", nullable: false),
                     FechaNac = table.Column<DateTime>(type: "datetime2", nullable: false),
                     PesoNacer = table.Column<int>(type: "int", nullable: true),
                     Costo = table.Column<int>(type: "int", nullable: true),
-                    Observacion = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    Observacion = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    padreID = table.Column<int>(type: "int", nullable: false),
+                    MotherID = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Bovinos", x => x.IdBovino);
+                    table.PrimaryKey("PK_bovinos", x => x.IdBovino);
                     table.ForeignKey(
-                        name: "FK_Bovinos_Madres_MadresID",
-                        column: x => x.MadresID,
-                        principalTable: "Madres",
+                        name: "FK_bovinos_Father_padreID",
+                        column: x => x.padreID,
+                        principalTable: "Father",
                         principalColumn: "ID",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Bovinos_Padres_PadresID",
-                        column: x => x.PadresID,
-                        principalTable: "Padres",
+                        name: "FK_bovinos_Mother_MotherID",
+                        column: x => x.MotherID,
+                        principalTable: "Mother",
                         principalColumn: "ID",
                         onDelete: ReferentialAction.Cascade);
                 });
 
-            migrationBuilder.CreateIndex(
-                name: "IX_Bovinos_MadresID",
-                table: "Bovinos",
-                column: "MadresID");
+            migrationBuilder.CreateTable(
+                name: "Usuarios",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    UsuarioRolId = table.Column<int>(type: "int", nullable: false),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Nickname = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Password = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Usuarios", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Usuarios_UsuariosRoles_UsuarioRolId",
+                        column: x => x.UsuarioRolId,
+                        principalTable: "UsuariosRoles",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Bovinos_PadresID",
-                table: "Bovinos",
-                column: "PadresID");
+                name: "IX_bovinos_MotherID",
+                table: "bovinos",
+                column: "MotherID");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_bovinos_padreID",
+                table: "bovinos",
+                column: "padreID");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Usuarios_UsuarioRolId",
+                table: "Usuarios",
+                column: "UsuarioRolId");
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Bovinos");
+                name: "bovinos");
 
             migrationBuilder.DropTable(
                 name: "Preñeses");
@@ -139,10 +182,16 @@ namespace TORO.Server.Migrations
                 name: "Producciones");
 
             migrationBuilder.DropTable(
-                name: "Madres");
+                name: "Usuarios");
 
             migrationBuilder.DropTable(
-                name: "Padres");
+                name: "Father");
+
+            migrationBuilder.DropTable(
+                name: "Mother");
+
+            migrationBuilder.DropTable(
+                name: "UsuariosRoles");
         }
     }
 }

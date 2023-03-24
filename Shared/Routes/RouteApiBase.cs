@@ -24,28 +24,28 @@ public class UsuarioRouteManager:RouteApiBase
 
 public class BovinoRouteManager:RouteApiBase
 {
-    public const string BASE = $"{API}/bovino";
+    public const string BASE = $"{API}/bovinos";
     public const string GetById = $"{BASE}/{IdParameter}";
     public static string BuilRoute(int Id) => GetById.Replace(IdParameter,Id.ToString());
 }
 
 public class PadreRouteManager:RouteApiBase
 {
-    public const string BASE = $"{API}/padre";
+    public const string BASE = $"{API}/padres";
     public const string GetById = $"{BASE}/{IdParameter}";
     public static string BuilRoute(int Id) => GetById.Replace(IdParameter,Id.ToString());
 }
 
 public class MadreRouteManager:RouteApiBase
 {
-    public const string BASE = $"{API}/madre";
+    public const string BASE = $"{API}/madres";
     public const string GetById = $"{BASE}/{IdParameter}";
     public static string BuilRoute(int Id) => GetById.Replace(IdParameter,Id.ToString());
 }
 
 public class ProduccionRouteManager:RouteApiBase
 {
-    public const string BASE = $"{API}/produccion";
+    public const string BASE = $"{API}/producciones";
     public const string GetById = $"{BASE}/{IdParameter}";
     public static string BuilRoute(int Id) => GetById.Replace(IdParameter,Id.ToString());
 }

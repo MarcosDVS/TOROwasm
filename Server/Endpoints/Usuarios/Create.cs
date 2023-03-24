@@ -27,12 +27,12 @@ public override async Task<ActionResult<Respuesta>> HandleAsync (Request request
 {
     try{
         #region  Validaciones
-        var rol = await DbContext.Users.FirstOrDefaultAsync(r => r.Name.ToLower() == request.Name.ToLower(),cancellationToken);
+        var rol = await DbContext.Usuarios.FirstOrDefaultAsync(r => r.Nickname.ToLower() == request.Nickname.ToLower(),cancellationToken);
         if(rol != null)
-            return Respuesta.Fail($"Ya existe un rol con el nombre'({request.Name})'.");
+            return Respuesta.Fail($"Ya existe un usuario con el correo'({request.Nickname})'.");
         #endregion
-       rol = Usuarios.Crear(request);
-        DbContext.Users.Add(rol);
+       rol = Models.Usuario.Crear(request);
+        DbContext.Usuarios.Add(rol);
         await DbContext.SaveChangesAsync(cancellationToken);
         return Respuesta.Success(rol.Id);
     }

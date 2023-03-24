@@ -1,4 +1,4 @@
-@page "/user"
+@page "/users"
 
 <MenuDisplay />
 
@@ -51,11 +51,11 @@
 
     public void Agregar()
     {
-        urlHelper.NavigateTo("/user/crear",false);
+        urlHelper.NavigateTo("/users/crear",false);
     }
 
     public void Editar(int Id)
     {
-        urlHelper.NavigateTo($"/user/editar/{Id}",false);
+        urlHelper.NavigateTo($"/users/editar/{Id}",false);
     }
 }

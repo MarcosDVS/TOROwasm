@@ -4,13 +4,13 @@ using TORO.Shared.Requests;
 
 namespace TORO.Server.Models;
 
-public class Usuarios
+public class Usuario
 {
-    public Usuarios()
+    public Usuario()
     {
         
     }
-    public Usuarios(int usuarioRolId, string name, string nickname, string password)
+    public Usuario(int usuarioRolId, string name, string nickname, string password)
     {
         UsuarioRolId = usuarioRolId;
         Name = name;
@@ -26,9 +26,9 @@ public class Usuarios
     public string Password { get; set; } = null!;
     public UsuarioRol UsuarioRol { get; set; } = null!;
 
-    public static Usuarios Crear(UsuarioCreateRequest request) 
+    public static Usuario Crear(UsuarioCreateRequest request) 
     {
-        return new Usuarios(
+        return new Usuario(
             request.UsuarioRolId,
             request.Name,
             request.Nickname,

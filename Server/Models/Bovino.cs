@@ -4,13 +4,13 @@ using TORO.Shared.Records;
 
 namespace TORO.Server.Models;
 
-public class Bovinos
+public class Bovino
 {
-    public Bovinos()
+    public Bovino()
     {
         
     }
-    public Bovinos(string raza, string color, string sexo, int? idPadre, int? idMadre, DateTime fechaNac, int? pesoNacer, int? costo, string? observacion)
+    public Bovino(string raza, string color, string sexo, int? idPadre, int? idMadre, DateTime fechaNac, int? pesoNacer, int? costo, string? observacion)
     {
         Raza = raza;
         Color = color;
@@ -35,14 +35,14 @@ public class Bovinos
     public int? PesoNacer { get; set; } = 25;
     public int? Costo { get; set; }
     public string? Observacion { get; set; }
-    public virtual Padres padre { get; set; } = null!;
-    public virtual Madres Mother { get; set; } = null!;
+    public virtual Padre padre { get; set; } = null!;
+    public virtual Madre Mother { get; set; } = null!;
     #endregion
 
     #region Funciones
-    public static Bovinos Crear(BovinoCreateRequest request)
+    public static Bovino Crear(BovinoCreateRequest request)
     {
-        return new Bovinos(
+        return new Bovino(
             request.Raza,
             request.Color,
             request.Sexo,

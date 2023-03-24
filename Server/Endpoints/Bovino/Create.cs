@@ -31,7 +31,7 @@ public override async Task<ActionResult<Respuesta>> HandleAsync (Request request
         if(rol != null)
             return Respuesta.Fail($"Ya existe un rol con el nombre'({request.FechaNac})'.");
         #endregion
-       rol = Bovinos.Crear(request);
+       rol = Models.Bovino.Crear(request);
         DbContext.bovinos.Add(rol);
         await DbContext.SaveChangesAsync(cancellationToken);
         return Respuesta.Success(rol.IdBovino);

@@ -1,5 +1,5 @@
-﻿@page "/padre/crear"
-@page "/padre/crear/{Id:int}"
+﻿@page "/padres/crear"
+@page "/padres/editar/{Id:int}"
 
 <MenuDisplay />
 
@@ -70,10 +70,10 @@
     {
         var resultado = await padresManager.CreateAsync(Produc);
 
-        if(resultado.Succeeded) urlHelper.NavigateTo("/padre/crear",false);
+        if(resultado.Succeeded) urlHelper.NavigateTo("/madres/crear",false);
     }
     void back()
     {
-        urlHelper.NavigateTo("/new/cow");
+        urlHelper.NavigateTo("/bovinos/crear",false);
     }
 }

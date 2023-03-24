@@ -4,50 +4,49 @@ using TORO.Shared.Records;
 
 namespace TORO.Server.Models;
 
-public class Padres
+public class Madre
 {
-    public Padres()
+    public Madre()
     {
         
     }
-    public Padres(int idPadre, int idHijo, string? colorHijo, string sexoHijo, DateTime fechaNac)
+    public Madre(int idMadre, int idHijo, string? colorHijo, string sexoHijo, DateTime fechaNac)
     {
-        IdPadre = idPadre;
+        IdMadre = idMadre;
         IdHijo = idHijo;
         ColorHijo = colorHijo;
         SexoHijo = sexoHijo;
         FechaNac = fechaNac;
     }
-    [Key] 
+
+    [Key]
     public int ID { get; set; }
-    public int IdPadre { get; set; }
+    public int IdMadre { get; set; }
     public int IdHijo { get; set; }
     public string? ColorHijo { get; set; }
     public string SexoHijo { get; set; } = null!;
     public DateTime FechaNac { get; set; } = DateTime.Now;
 
-    public static Padres Crear(PadreCreateRequest request)
+    public static Madre Crear(MadreCreateRequest request)
     {
-        return new Padres(
-            request.IdPadre, 
+        return new Madre(
+            request.IdMadre, 
             request.IdHijo, 
             request.ColorHijo, 
             request.SexoHijo, 
             request.FechaNac
         );
     }
-
-    public void Modificar(PadreUpdateRequest request)
+    public void Modificar(MadreUpdateRequest request)
     {
-        if(IdPadre != request.IdPadre) IdPadre = request.IdPadre;
+        if(IdMadre != request.IdMadre) IdMadre = request.IdMadre;
         if(IdHijo != request.IdHijo) IdHijo = request.IdHijo;
         if(ColorHijo != request.ColorHijo) ColorHijo = request.ColorHijo;
         if(SexoHijo != request.SexoHijo) SexoHijo = request.SexoHijo;
         if(FechaNac != request.FechaNac) FechaNac = request.FechaNac;
     }
-
-    public PadreRecord ToRecord()
+    public MadreRecord ToRecord()
     {
-        return new PadreRecord(ID, IdPadre, IdHijo, ColorHijo, SexoHijo, FechaNac);
+        return new MadreRecord(ID, IdMadre, IdHijo, ColorHijo, SexoHijo, FechaNac);
     }
 }

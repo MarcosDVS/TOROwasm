@@ -12,8 +12,8 @@ using TORO.Server.Context;
 namespace TORO.Server.Migrations
 {
     [DbContext(typeof(TORODbContext))]
-    [Migration("20230213231303_AddNewModels")]
-    partial class AddNewModels
+    [Migration("20230324105431_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -49,14 +49,11 @@ namespace TORO.Server.Migrations
                     b.Property<int?>("IdPadre")
                         .HasColumnType("int");
 
-                    b.Property<int>("MadresID")
+                    b.Property<int>("MotherID")
                         .HasColumnType("int");
 
                     b.Property<string>("Observacion")
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("PadresID")
-                        .HasColumnType("int");
 
                     b.Property<int?>("PesoNacer")
                         .HasColumnType("int");
@@ -69,74 +66,19 @@ namespace TORO.Server.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("padreID")
+                        .HasColumnType("int");
+
                     b.HasKey("IdBovino");
 
-                    b.HasIndex("MadresID");
+                    b.HasIndex("MotherID");
 
-                    b.HasIndex("PadresID");
+                    b.HasIndex("padreID");
 
-                    b.ToTable("Bovinos");
+                    b.ToTable("bovinos");
                 });
 
-            modelBuilder.Entity("TORO.Server.Models.Madre", b =>
-                {
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
-
-                    b.Property<string>("ColorHijo")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("FechaNac")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("IdHijo")
-                        .HasColumnType("int");
-
-                    b.Property<int>("IdMadre")
-                        .HasColumnType("int");
-
-                    b.Property<string>("SexoHijo")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("ID");
-
-                    b.ToTable("Madres");
-                });
-
-            modelBuilder.Entity("TORO.Server.Models.Padre", b =>
-                {
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
-
-                    b.Property<string>("ColorHijo")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("FechaNac")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("IdHijo")
-                        .HasColumnType("int");
-
-                    b.Property<int>("IdPadre")
-                        .HasColumnType("int");
-
-                    b.Property<string>("SexoHijo")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("ID");
-
-                    b.ToTable("Padres");
-                });
-
-            modelBuilder.Entity("TORO.Server.Models.Preñes", b =>
+            modelBuilder.Entity("TORO.Server.Models.EmbVaca", b =>
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
@@ -176,7 +118,65 @@ namespace TORO.Server.Migrations
                     b.ToTable("Preñeses");
                 });
 
-            modelBuilder.Entity("TORO.Server.Models.Produccion", b =>
+            modelBuilder.Entity("TORO.Server.Models.Madre", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+
+                    b.Property<string>("ColorHijo")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("FechaNac")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("IdHijo")
+                        .HasColumnType("int");
+
+                    b.Property<int>("IdMadre")
+                        .HasColumnType("int");
+
+                    b.Property<string>("SexoHijo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("Mother");
+                });
+
+            modelBuilder.Entity("TORO.Server.Models.Padre", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+
+                    b.Property<string>("ColorHijo")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("FechaNac")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("IdHijo")
+                        .HasColumnType("int");
+
+                    b.Property<int>("IdPadre")
+                        .HasColumnType("int");
+
+                    b.Property<string>("SexoHijo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("Father");
+                });
+
+            modelBuilder.Entity("TORO.Server.Models.ProdLeche", b =>
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
@@ -240,42 +240,37 @@ namespace TORO.Server.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("PermisoCrar")
+                    b.Property<bool>("PermisoParaCrear")
                         .HasColumnType("bit");
 
-                    b.Property<bool>("PermisoEditar")
+                    b.Property<bool>("PermisoParaEditar")
                         .HasColumnType("bit");
 
-                    b.Property<bool>("PermisoEliminar")
+                    b.Property<bool>("PermisoParaEliminar")
                         .HasColumnType("bit");
-
-                    b.Property<int?>("UsuarioRolId")
-                        .HasColumnType("int");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("UsuarioRolId");
 
                     b.ToTable("UsuariosRoles");
                 });
 
             modelBuilder.Entity("TORO.Server.Models.Bovino", b =>
                 {
-                    b.HasOne("TORO.Server.Models.Madre", "Madres")
+                    b.HasOne("TORO.Server.Models.Madre", "Mother")
                         .WithMany()
-                        .HasForeignKey("MadresID")
+                        .HasForeignKey("MotherID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("TORO.Server.Models.Padre", "Padres")
+                    b.HasOne("TORO.Server.Models.Padre", "padre")
                         .WithMany()
-                        .HasForeignKey("PadresID")
+                        .HasForeignKey("padreID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Madres");
+                    b.Navigation("Mother");
 
-                    b.Navigation("Padres");
+                    b.Navigation("padre");
                 });
 
             modelBuilder.Entity("TORO.Server.Models.Usuario", b =>
@@ -287,18 +282,6 @@ namespace TORO.Server.Migrations
                         .IsRequired();
 
                     b.Navigation("UsuarioRol");
-                });
-
-            modelBuilder.Entity("TORO.Server.Models.UsuarioRol", b =>
-                {
-                    b.HasOne("TORO.Server.Models.UsuarioRol", null)
-                        .WithMany("Usuarios")
-                        .HasForeignKey("UsuarioRolId");
-                });
-
-            modelBuilder.Entity("TORO.Server.Models.UsuarioRol", b =>
-                {
-                    b.Navigation("Usuarios");
                 });
 #pragma warning restore 612, 618
         }
